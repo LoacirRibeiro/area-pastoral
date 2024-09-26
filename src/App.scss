@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  //transition: 0.3s ease;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -72,7 +73,6 @@ li {
 .icons {
   gap: 0.5rem;
 }
-
 .icons .icon {
   height: 35px;
   width: 35px;
@@ -82,7 +82,6 @@ li {
   padding: 2px;
   border: 2px solid transparent;
 }
-
 .icons .icon:hover {
   border: 2px solid var(--shandowColor);
 }
@@ -118,7 +117,6 @@ img {
   font-weight: 500;
   background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
 }
-
 .btn:hover {
   transition: 0.3s ease-in-out;
   background: var(--primaryColor);
@@ -135,7 +133,6 @@ img {
   flex-direction: column;
   width: 100%;
 }
-
 .secTitle h3 {
   font-size: var(--h1FontSize);
 }

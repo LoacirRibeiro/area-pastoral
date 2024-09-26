@@ -1,0 +1,122 @@
+$primary-color: #ff6600; // Cor laranja
+$secondary-color: #333; // Cor do texto
+$background-color: #f9f9f9; // Fundo leve
+$form-background: white; // Fundo do formulário
+$border-color: #ccc; // Cor da borda
+$border-radius: 8px; // Raiz dos cantos
+$box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // Sombra sutil
+
+body {
+    font-family: 'Arial', sans-serif; // Fonte padrão
+    line-height: 1.6; // Altura da linha
+    color: $secondary-color; // Cor do texto
+}
+
+.Contact {
+    padding: 4rem 2rem; // Espaçamento interno aumentado
+    background-color: $background-color;
+
+    .secContainer {
+        max-width: 800px;
+        margin: 0 auto; // Centraliza a seção
+        padding: 2rem;
+        border-radius: $border-radius; // Cantos arredondados
+        background-color: $form-background; // Fundo branco
+        box-shadow: $box-shadow; // Sombra sutil
+    }
+
+    .secHeader {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .orangeText {
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 1.5rem; // Tamanho da fonte aumentada
+        }
+
+        .title {
+            font-size: 2.5rem; // Tamanho da fonte do título
+            margin: 0.5rem 0;
+            font-weight: 600; // Negrito
+        }
+
+        .orangeDot {
+            color: $primary-color; // Cor laranja para o ponto
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem; // Tamanho da fonte da descrição
+            color: #555; // Cor de texto mais suave
+        }
+    }
+
+    .contactForm {
+        background-color: $form-background; // Fundo branco para o formulário
+        padding: 2rem;
+        border-radius: $border-radius; // Cantos arredondados
+        box-shadow: $box-shadow; // Sombra sutil
+        margin-bottom: 2rem; // Espaçamento inferior
+
+        .formGroup {
+            margin-bottom: 1.5rem;
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: bold; // Negrito para os rótulos
+                font-size: 1rem; // Tamanho da fonte
+                color: $secondary-color; // Cor do rótulo
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 0.75rem; // Maior espaçamento interno
+                border: 1px solid $border-color;
+                border-radius: $border-radius; // Cantos arredondados
+                font-size: 1rem; // Tamanho da fonte
+
+                &:focus {
+                    border-color: $primary-color; // Muda a borda para a cor laranja ao focar
+                    outline: none; // Remove o contorno padrão
+                    box-shadow: 0 0 5px rgba($primary-color, 0.5); // Sombra ao focar
+                }
+            }
+        }
+
+        .submitBtn {
+            background-color: $primary-color; // Cor laranja
+            color: white; // Texto branco
+            padding: 0.75rem 1.5rem; // Espaçamento interno
+            border: none; // Remove a borda
+            border-radius: $border-radius; // Cantos arredondados
+            cursor: pointer; // Muda o cursor ao passar o mouse
+            font-size: 1rem; // Tamanho da fonte
+            transition: background-color 0.3s, transform 0.3s; // Transição suave
+
+            &:hover {
+                background-color: darken($primary-color, 10%); // Escurece ao passar o mouse
+                transform: translateY(-2px); // Leve elevação ao passar o mouse
+            }
+        }
+    }
+
+    .contactInfo {
+        margin-top: 2rem;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 1rem; // Espaçamento inferior
+            font-size: 1.8rem; // Tamanho do título
+            color: $secondary-color; // Cor do título
+        }
+
+        p {
+            margin: 0.5rem 0; // Espaçamento entre parágrafos
+            font-size: 1rem; // Tamanho da fonte
+            color: #555; // Cor de texto mais suave
+        }
+    }
+}
