@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
 
-// vamos escrever nosso doce padrão
-// isso será usado sempre aqui em nosso projeto
-//cores
 :root {
   --primaryColor: hsl(228, 66%, 53%);
   --primaryColorLight: hsl(223, 100%, 97%);
@@ -30,46 +27,18 @@
   --borderRadius: 1rem;
 }
 
-.Listing {
+// Estilos para a página Comunidade
+.comunidade {
   .secContainer {
     .secHeader {
       text-align: center;
       margin-top: 150px;
-      .activa {
-        background: var(--primaryColor);
-        border: 2px solid transparent;
-        color: var(--whiteColor);
-      }
-    }
 
-    .primaryListings{
-      border-radius: var(--borderRadius);
-      padding: 50px;
-      gap: 20px;
-      overflow: hidden;
-      &:hover {
-        box-shadow: 0 4px 6px var(--shandowColor);
-        .imgDiv {
-          img {
-            scale: 1.1;
-            transition: 0.3s ease-in-out;
-          }
-        }
+      .orangeText {
+        color: var(--orangeColor);
       }
 
-      .imgDiv {
-        height: 400px;
-        width: 100%;
-        border-radius: var(--borderRadius);
-        overflow: hidden;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .name {
+      .title {
         display: block;
         font-size: var(--h2FontSize);
         font-weight: 700;
@@ -82,80 +51,50 @@
         opacity: 0.7;
         font-size: var(--normalFontSize);
         line-height: 20px;
-        border-bottom: 2px solid rgb(235, 238, 242);
+      
         padding-bottom: 3rem;
-        
-      } 
+      }
     }
-  }
 
-  .secContent {
-    .singleListing {
-      display: grid;
+    .primaryListings {
+      display: flex;
+      padding: 50px;
+      flex-direction: column;
       border-radius: var(--borderRadius);
-      padding: 6px;
-      gap: 0.5rem;
       overflow: hidden;
+      transition: box-shadow 0.3s ease-in;
+
       &:hover {
         box-shadow: 0 4px 6px var(--shandowColor);
-        .imgDiv {
-          img {
-            scale: 1.1;
-            transition: 0.3s ease-in-out;
-          }
-        }
       }
 
       .imgDiv {
-        height: 250px;
+        height: 400px;
         width: 100%;
         border-radius: var(--borderRadius);
         overflow: hidden;
+       
+
         img {
           height: 100%;
           width: 100%;
           object-fit: cover;
         }
       }
+      .info {
+        padding: 1rem; // Espaçamento interno
+        text-align: center; // Centraliza o texto
 
-      .name {
-        display: block;
-        font-size: var(--h2FontSize);
-        font-weight: 700;
-        color: var(--primaryColorDark);
-      }
+        .name {
+          font-size: var(--h2FontSize);
+          color: var(--primaryColorDark);
+          margin: 0.5rem 0; // Margem superior/inferior
+        }
 
-      p {
-        color: var(--primaryColorDark);
-        opacity: 0.7;
-        font-size: var(--normalFontSize);
-        line-height: 20px;
-        border-bottom: 2px solid rgb(235, 238, 242);
-        padding-bottom: 1rem;
-      }
-    }
-  }
-}
-
-// media queries
-@media screen and (min-width: 480px) {
-  .Listing {
-    .secContainer {
-      .secContent {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: flex-start;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .Listing {
-    .secContainer {
-      .secContent {
-        gap: 3rem;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: flex-start;
+        p {
+          color: var(--blackColorLight);
+          margin: 0; // Remove margens padrão
+        }
       }
     }
   }

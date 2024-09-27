@@ -42,10 +42,10 @@ function Navbar() {
         {/*<div className="menu"> adiciona {menu} ao menu*/}
         <ul>
           <li className="navList" onClick={removeNavbar}>
-            Noticias
+            Comunicado
           </li>
           <li className="navList" onClick={removeNavbar}>
-            Comunidade
+            Clero
           </li>
           <li className="navList" onClick={removeNavbar}>
             Sobre nós
