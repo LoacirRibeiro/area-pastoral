@@ -90,7 +90,7 @@ body {
 .Contact .contactInfo h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
-  color: #333;
+  color: var(--primaryColorDark);
 }
 .Contact .contactInfo p {
   margin: 0.5rem 0;

@@ -38,7 +38,7 @@
 .donationForm h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--primaryColorDark);
 }
 .donationForm p {
   margin: 0.5rem 0;
@@ -59,7 +59,7 @@
 .donationInfo h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem;
-  color: #333;
+  color: var(--primaryColorDark);
 }
 .donationInfo p {
   margin: 0.5rem 0;

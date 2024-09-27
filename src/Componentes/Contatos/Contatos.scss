@@ -110,7 +110,7 @@ body {
         h2 {
             margin-bottom: 1rem; // Espaçamento inferior
             font-size: 1.8rem; // Tamanho do título
-            color: $secondary-color; // Cor do título
+            color: var(--primaryColorDark);
         }
 
         p {

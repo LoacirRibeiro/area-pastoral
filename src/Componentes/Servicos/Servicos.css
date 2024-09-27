@@ -1,6 +1,5 @@
-.Comunicados {
+.Servicos {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
 }
 
 .secContainer {
@@ -11,6 +10,7 @@
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-top: 50px;
 }
 
 .secHeader {
@@ -32,10 +32,10 @@
   color: #555;
 }
 
-.comunicadosList {
+.servicosList {
   text-align: left;
 }
-.comunicadosList .comunicado {
+.servicosList .servico {
   margin-bottom: 2rem;
   padding: 1.5rem;
   border: 1px solid #ccc;
@@ -43,17 +43,37 @@
   background-color: #f3f3f3;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.comunicadosList .comunicado .comunicadoTitle {
+.servicosList .servico .servicoTitle {
   font-size: 1.8rem;
   color: var(--primaryColorDark);
   margin-bottom: 0.5rem;
 }
-.comunicadosList .comunicado .comunicadoDate {
+.servicosList .servico .servicoDate {
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 1rem;
 }
-.comunicadosList .comunicado .comunicadoContent {
+.servicosList .servico .servicoContent {
   font-size: 1rem;
   color: #555;
-}/*# sourceMappingURL=Comunicado.css.map */
+  margin-bottom: 1rem;
+}
+.servicosList .servico .confirmButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.servicosList .servico .confirmButton:hover {
+  background-color: #cc5200;
+}
+.servicosList .servico .confirmButton.confirmed {
+  background-color: #4caf50;
+  cursor: not-allowed;
+}
+.servicosList .servico .confirmButton.confirmed:hover {
+  background-color: #4caf50;
+}/*# sourceMappingURL=Servicos.css.map */
