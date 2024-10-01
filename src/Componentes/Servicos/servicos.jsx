@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Servicos.css';
+import './servicos.css';
 
 function Servicos() {
     const [participacoes, setParticipacoes] = useState([]);
@@ -32,7 +32,7 @@ function Servicos() {
     };
 
     return (
-        <div className="Servicos container section">
+        <div className="servicos container section">
             <div className="secContainer">
                 <div className="secHeader">
                     <span className="orangeText">Serviços da Igreja</span>

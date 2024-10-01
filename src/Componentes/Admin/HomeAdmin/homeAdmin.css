@@ -1,0 +1,47 @@
+.home-admin {
+  padding: 2rem;
+  background-color: var(--bgColor);
+}
+.home-admin .secContainer .secHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home-admin .secContainer .secHeader .orangeText {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.home-admin .secContainer .secHeader .title {
+  font-size: var(--biggestFontSize);
+  color: var(--primaryColorDark);
+  margin: 0.5rem 0;
+}
+.home-admin .secContainer .secHeader p {
+  font-size: var(--normalFontSize);
+  color: #555;
+}
+.home-admin .secContainer .secContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.home-admin .secContainer .secContent .singleListing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  text-decoration: none;
+  color: var(--primaryColor);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.home-admin .secContainer .secContent .singleListing:hover {
+  transform: translateY(-5px);
+  background-color: var(--primaryColor);
+  color: white;
+}
+.home-admin .secContainer .secContent .singleListing .info .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=homeAdmin.css.map */
