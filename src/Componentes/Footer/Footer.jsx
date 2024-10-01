@@ -18,60 +18,41 @@ function Footer() {
      }, [])
 
   return (
-    <div className="Footer">
+    <div className="footer">
       <div className="secContainer container grid">
         
         <div data-aos='fade-up'className="logoDiv">
           <div className="footerLogo">
             <img className="img" src={img} alt="" />
-            <span> Area Pastoral </span>
+            <span> Área Pastoral Missionária São José de Anchieta </span>
           </div>
-          <p>Nossa visão é criar um lugar para as pessoas viverem!</p>
+          <p>Nossa missão é criar um lugar para as pessoas viverem em FÉ!</p>
           <div className="socials flex">
             <ImFacebook className="icon" />
             <BsTwitter className="icon" />
             <AiFillInstagram className="icon" />
           </div>
+          <div className="footerReact">
+            <span>Feito com Amor Por</span>
+            <li>Loacir & Fernado</li>
+          </div>
         </div>
 
         <div data-aos='fade-up' className="footerLinks">
-          <span className="linkTitle">Informação</span>
+          <span className="linkTitle">Informaçoẽs Ùteis</span>
           <li>
-            <a href="#">Home</a>
+            <a href="#">Comunicados</a>
           </li>
           <li>
-            <a href="#">Explorar</a>
+            <a href="#">Clero</a>
           </li>
           <li>
-            <a href="#">Viagem</a>
+            <a href="#">Contatos</a>
           </li>
           <li>
-            <a href="#">Bolg</a>
+            <a href="#">Login</a>
           </li>
-        </div>
-
-        <div data-aos='fade-up'className="footerLinks">
-          <span className="linkTitle">Links úteis</span>
-          <li>
-            <a href="#">Destino</a>
-          </li>
-          <li>
-            <a href="#">Suporte</a>
-          </li>
-          <li>
-            <a href="#">Viagens & Condições</a>
-          </li>
-          <li>
-            <a href="#">Privacidade</a>
-          </li>
-        </div>
-
-        <div data-aos='fade-up'className="footerLinks">
-          <span className="linkTitle">Detalhes do contato</span>
-          <span className="phone">+651 125 658 000</span>
-          <span className="email">Loacirrb@gmail.com</span>
-          <span className="website">www.dominio.com</span>
-        </div>
+        </div>       
       </div>
     </div>
   );

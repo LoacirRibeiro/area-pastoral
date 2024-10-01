@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import './Login.css';
+import './LoginAdmin.css'; // Certifique-se de criar este arquivo CSS
 import { Link } from "react-router-dom";
 
-function Login() {
+function LoginAdmin() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
@@ -14,15 +14,15 @@ function Login() {
             setErrorMessage("Por favor, preencha todos os campos.");
         } else {
             // Simulação de login bem-sucedido
-            console.log("Login realizado com sucesso!");
+            console.log("Login admin realizado com sucesso!");
             // Redirecionar ou atualizar estado conforme necessário
         }
     };
 
     return (
-        <div className="Login container">
+        <div className="LoginAdmin container">
             <div className="loginContainer">
-                <h1 className="title">Login</h1>
+                <h1 className="title">Login Admin</h1>
                 {errorMessage && <p className="error">{errorMessage}</p>}
                 <form onSubmit={handleLogin}>
                     <div className="inputGroup">
@@ -45,19 +45,15 @@ function Login() {
                             required
                         />
                     </div>
-                    <div className="forgotPassword">
-                        <Link to={"/RecuperarSenha"}>Esqueci a senha</Link>
-                    </div>
                     <button type="submit" className="loginButton">Entrar</button>
                 </form>
-
-                {/* Adicionando o link para a página de cadastro */}
-                <div className="signupLink">
-                    <p>Não tem uma conta? <Link to={"/Cadastrar"}>Cadastre-se</Link></p>
+                {/* Link para a página de recuperação de senha */}
+                <div className="forgotPassword">
+                    <Link to={"/RecuperarSenha"}>Esqueci a senha</Link>
                 </div>
             </div>
         </div>
     );
 }
 
-export default Login;
+export default LoginAdmin;

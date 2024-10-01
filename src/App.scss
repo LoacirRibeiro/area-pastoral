@@ -113,15 +113,16 @@ img {
   cursor: pointer;
   border-radius: 5px;
   padding: 0.8rem 1.2rem;
-  color: var(--whiteColor);
+  color: var(--whiteColor) !important;
   font-weight: 500;
   background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
 }
 .btn:hover {
   transition: 0.3s ease-in-out;
   background: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--whiteColor) !important;
 }
+
 
 .secTitle {
   display: grid;

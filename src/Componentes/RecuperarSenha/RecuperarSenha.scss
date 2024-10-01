@@ -1,0 +1,69 @@
+.RecuperarSenha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+
+    .RecuperarSenhaContainer {
+        max-width: 400px;
+        width: 100%;
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 60px;
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ff6600;
+        }
+
+        .successMessage {
+            color: green;
+            margin-bottom: 1rem;
+        }
+
+        .errorMessage {
+            color: red;
+            margin-bottom: 1rem;
+        }
+
+        .inputGroup {
+            margin-bottom: 1.5rem;
+            text-align: left;
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+        }
+
+        .resetButton {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken(#ff6600, 10%);
+            }
+        }
+    }
+}

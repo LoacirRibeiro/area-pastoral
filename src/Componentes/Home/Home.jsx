@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // Importação de imagens
-import image1 from "../../Assets/Padre-Rafael.png";
+import image1 from "../../Assets/joey.jpeg";
 
 const properties = [
   {

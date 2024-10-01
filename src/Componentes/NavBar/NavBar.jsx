@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import './NavBar.css'
-import img from '../../Assets/soa jose.jpeg'
+import "./NavBar.css";
+import img from "../../Assets/soa jose.jpeg";
 
 // importação de icones
-import { SiTreehouse } from "react-icons/si";
+import { FaHeart } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // função para mostrar a barra de navegação
@@ -21,43 +22,60 @@ function Navbar() {
   };
 
   // função para adicionar um fundo à barra de navegação
-  const[transparente, setTransparente] = useState("navbar")
+  const [transparente, setTransparente] = useState("navbar");
   const addBg = () => {
-    if (window.scrollY >= 10){
-      setTransparente('navbar addBackground')
-    } else{
+    if (window.scrollY >= 10) {
+      setTransparente("navbar addBackground");
+    } else {
       setTransparente("navbar");
     }
-  }
-  window.addEventListener('scroll', addBg)
+  };
+  window.addEventListener("scroll", addBg);
 
   return (
     <div className={transparente}>
       <div className="logoDiv">
         <img className="img" src={img} alt="São Jose de Anchieta" />
-        <span>Àrea Pastoral São José de Anchieta</span>
+        <span>
+          <Link to="/" className="link">
+            Àrea Pastoral São José de Anchieta
+          </Link>
+        </span>
       </div>
 
       <div className={menu}>
         {/*<div className="menu"> adiciona {menu} ao menu*/}
         <ul>
           <li className="navList" onClick={removeNavbar}>
-            Comunicado
+            <Link to="Comunicados" className="link">
+              Comunicado
+            </Link>
           </li>
           <li className="navList" onClick={removeNavbar}>
-            Clero
+            <Link to="Clero" className="link">
+              Clero
+            </Link>
           </li>
           <li className="navList" onClick={removeNavbar}>
-            Sobre nós
+            <Link to="Contatos" className="link">
+              Contato
+            </Link>
           </li>
           <li className="navList" onClick={removeNavbar}>
-            Doar
+            <Link to="Login" className="link">
+              Login
+            </Link>
+          </li>
+          <li className="navList liBtn" onClick={removeNavbar}>
+            <button className="contactBtn btn">
+              <Link to="/Doar">Faça Sua Doação</Link>
+                <FaHeart className="iconHeart" /> 
+            </button>
           </li>
         </ul>
         {/* ícone para fechar a barra de navegação */}
         <AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar} />
       </div>
-      <button className="contactBtn btn">Contato</button>
 
       {/* ícone para abrir/mostrar em dispositivos pequenos */}
       <PiDotsNineBold className="icon menuIcon" onClick={showNavbar} />
