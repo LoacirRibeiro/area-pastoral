@@ -1,0 +1,99 @@
+.AdminContato {
+    padding: 20px;
+  
+    .secHeader {
+      margin-bottom: 20px;
+    }
+  
+    .mensagem {
+      color: green;
+      margin-bottom: 15px;
+    }
+  
+    .cadastroForm {
+      margin-bottom: 20px;
+  
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+  
+    .inputGroup {
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  
+    .cadastroButton {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    .contatosCadastrados {
+      margin-top: 20px;
+  
+      .contato {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  
+        .contatoInfo {
+          flex: 1;
+  
+          h3 {
+            margin: 0 0 5px;
+          }
+        }
+  
+        .contatoActions {
+          button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+  
+            &:first-of-type {
+              background-color: #2196f3;
+              color: white;
+  
+              &:hover {
+                background-color: #1e88e5;
+              }
+            }
+  
+            &:last-of-type {
+              background-color: #f44336;
+              color: white;
+  
+              &:hover {
+                background-color: #e53935;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,103 @@
+.AdminCadastroAdmin .secContainer {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.AdminCadastroAdmin .secHeader {
+  margin-bottom: 20px;
+}
+.AdminCadastroAdmin .secHeader h1 {
+  font-size: 24px;
+  color: #333;
+}
+.AdminCadastroAdmin .mensagem {
+  margin-bottom: 20px;
+  color: #d9534f;
+}
+.AdminCadastroAdmin .cadastroForm {
+  margin-bottom: 20px;
+}
+.AdminCadastroAdmin .cadastroForm h2 {
+  font-size: 20px;
+  color: #555;
+}
+.AdminCadastroAdmin .cadastroForm .inputGroup {
+  margin-bottom: 15px;
+}
+.AdminCadastroAdmin .cadastroForm .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.AdminCadastroAdmin .cadastroForm .inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminCadastroAdmin .cadastroForm .inputGroup input:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+.AdminCadastroAdmin .cadastroForm .cadastroButton,
+.AdminCadastroAdmin .cadastroForm .cancelButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+.AdminCadastroAdmin .cadastroForm .cadastroButton:hover,
+.AdminCadastroAdmin .cadastroForm .cancelButton:hover {
+  background-color: #31b0d5;
+}
+.AdminCadastroAdmin .cadastroForm .cadastroButton {
+  background-color: #5bc0de;
+}
+.AdminCadastroAdmin .cadastroForm .cancelButton {
+  background-color: #d9534f;
+}
+.AdminCadastroAdmin .adminsCadastrados h2 {
+  font-size: 20px;
+  color: #555;
+}
+.AdminCadastroAdmin .adminsCadastrados ul {
+  list-style-type: none;
+  padding: 0;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons {
+  display: flex;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .editButton,
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .deleteButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .editButton:hover,
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .deleteButton:hover {
+  opacity: 0.8;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .editButton {
+  background-color: #5cb85c;
+}
+.AdminCadastroAdmin .adminsCadastrados ul .adminItem .actionButtons .deleteButton {
+  background-color: #d9534f;
+}/*# sourceMappingURL=cadastroAdmin.css.map */

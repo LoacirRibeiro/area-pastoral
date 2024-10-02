@@ -1,0 +1,79 @@
+.AdminDizimista {
+    .secContainer {
+      margin-top: 80px; // Para garantir que fique abaixo do navbar
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  
+      .secHeader {
+        margin-bottom: 20px;
+  
+        h1 {
+          color: #333;
+          font-size: 24px;
+        }
+      }
+  
+      .dizimistaSearch, .relatorioForm, .pagamentosEfetuados, .relatoriosGerados {
+        margin-bottom: 20px;
+  
+        h2 {
+          color: #e76f51; // Cor de destaque
+          margin-bottom: 10px;
+        }
+  
+        input, select {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          width: calc(100% - 22px); // Para incluir o padding
+          margin-bottom: 10px;
+        }
+  
+        button {
+          background-color: #e76f51;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #d65f39; // Efeito hover
+          }
+        }
+      }
+  
+      .pagamentosEfetuados {
+        ul {
+          list-style-type: none;
+          padding: 0;
+  
+          .pagamentoItem {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          }
+        }
+      }
+  
+      .relatoriosGerados {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          
+          li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  

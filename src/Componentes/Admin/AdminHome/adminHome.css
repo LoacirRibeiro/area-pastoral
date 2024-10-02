@@ -1,0 +1,63 @@
+.AdminHome .secContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.AdminHome .secHeader {
+  margin-bottom: 20px;
+}
+.AdminHome .mensagem {
+  color: green;
+  margin-bottom: 10px;
+}
+.AdminHome .cadastroForm {
+  margin-bottom: 30px;
+}
+.AdminHome .cadastroForm .inputGroup {
+  margin-bottom: 15px;
+}
+.AdminHome .cadastroForm .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.AdminHome .cadastroForm .inputGroup input,
+.AdminHome .cadastroForm .inputGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminHome .cadastroForm .cadastroButton {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminHome .cadastroForm .cadastroButton:hover {
+  background-color: #4cae4c;
+}
+.AdminHome .homesCadastrados ul {
+  list-style-type: none;
+  padding: 0;
+}
+.AdminHome .homesCadastrados ul .home {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.AdminHome .homesCadastrados ul .home .homeInfo {
+  flex-grow: 1;
+}
+.AdminHome .homesCadastrados ul .home .homeInfo .homeImage {
+  width: 100px; /* Ajuste o tamanho da imagem */
+  height: auto;
+  margin-right: 10px;
+}
+.AdminHome .homesCadastrados ul .home .homeActions button {
+  margin-right: 5px;
+}/*# sourceMappingURL=adminHome.css.map */

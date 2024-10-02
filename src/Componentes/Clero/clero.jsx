@@ -13,14 +13,14 @@ import "aos/dist/aos.css";
 const properties = [
   {
     id: 1,
-    image: image1,
+    imagem: image1,
     name: "Ceminarista1",
     desc: "Lorem ipsum dolor sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido. É uma seqüência de palavras latinas que, como estão posicionadas, não formem frases com um sentido completo, mas dão vida a um texto de teste útil para preencher espaços que irão Posteriormente serão ocupados a partir de textos ad hoc compostos por profissionais de comunicação. É certamente o texto de marcador de posição mais famoso ,",
   },
 
   {
     id: 2,
-    image: image1,
+    imagem: image1,
     name: "Ceminarista2",
     desc: "Lorem ipsum dolor sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido. É uma seqüência de palavras latinas que, como estão posicionadas, não formem frases com um sentido completo, mas dão vida a um texto de teste útil para preencher espaços que irão Posteriormente serão ocupados a partir de textos ad hoc compostos por profissionais de comunicação. É certamente o texto de marcador de posição mais famoso ,",
   },
@@ -50,7 +50,7 @@ function Clero() {
 
         <div className="primaryListings">
           <div data-aos="fade-down" className="imgDiv">
-            <img src={img} alt="House Image"></img>
+            <img src={img} alt="Padre"></img>
           </div>
           <div data-aos="fade-up" className="info">
             <h2 className="name">Pe. Rafael Dionísio de Sousa </h2>
@@ -80,11 +80,11 @@ function Clero() {
 
         <div className="secContent grid">
           {/* método de matriz de mapa */}
-          {properties.map(({ id, image, name, price, desc, beds }) => {
+          {properties.map(({ id, imagem, name, price, desc, beds }) => {
             return (
               <div key={id} className="singleListing">
                 <div data-aos="fade-down" className="imgDiv">
-                  <img src={image} alt="House Image"></img>
+                  <img src={imagem} alt="ceminaristas"></img>
                 </div>
                 <div data-aos="fade-up" className="info">
                   <h2 className="name">{name}</h2>

@@ -1,0 +1,78 @@
+.AdminContato {
+  padding: 20px;
+}
+.AdminContato .secHeader {
+  margin-bottom: 20px;
+}
+.AdminContato .mensagem {
+  color: green;
+  margin-bottom: 15px;
+}
+.AdminContato .cadastroForm {
+  margin-bottom: 20px;
+}
+.AdminContato .cadastroForm h2 {
+  margin-bottom: 15px;
+}
+.AdminContato .inputGroup {
+  margin-bottom: 15px;
+}
+.AdminContato .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.AdminContato .inputGroup input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminContato .cadastroButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminContato .cadastroButton:hover {
+  background-color: #45a049;
+}
+.AdminContato .contatosCadastrados {
+  margin-top: 20px;
+}
+.AdminContato .contatosCadastrados .contato {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminContato .contatosCadastrados .contato .contatoInfo {
+  flex: 1;
+}
+.AdminContato .contatosCadastrados .contato .contatoInfo h3 {
+  margin: 0 0 5px;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions button:first-of-type {
+  background-color: #2196f3;
+  color: white;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions button:first-of-type:hover {
+  background-color: #1e88e5;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions button:last-of-type:hover {
+  background-color: #e53935;
+}/*# sourceMappingURL=admincontato.css.map */

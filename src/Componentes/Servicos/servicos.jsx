@@ -9,19 +9,19 @@ function Servicos() {
             id: 1,
             title: "Missa de Adoração",
             date: "2 de Outubro de 2024",
-            content: "Participe da missa de adoração às 19h. Venha renovar sua fé!"
+            desc: "Participe da missa de adoração às 19h. Venha renovar sua fé!"
         },
         {
             id: 2,
             title: "Círculo de Oração",
             date: "5 de Outubro de 2024",
-            content: "Venha se juntar ao nosso círculo de oração às 16h. Todos são bem-vindos!"
+            desc: "Venha se juntar ao nosso círculo de oração às 16h. Todos são bem-vindos!"
         },
         {
             id: 3,
             title: "Voluntariado na Comunidade",
             date: "8 de Outubro de 2024",
-            content: "Ajude-nos a fazer a diferença! Inscreva-se para o dia de voluntariado."
+            desc: "Ajude-nos a fazer a diferença! Inscreva-se para o dia de voluntariado."
         }
     ];
 
@@ -44,11 +44,11 @@ function Servicos() {
                 </div>
 
                 <div className="servicosList">
-                    {servicos.map(({ id, title, date, content }) => (
+                    {servicos.map(({ id, title, date, desc }) => (
                         <div key={id} className="servico">
                             <h2 className="servicoTitle">{title}</h2>
                             <p className="servicoDate">{date}</p>
-                            <p className="servicoContent">{content}</p>
+                            <p className="servicoContent">{desc}</p>
                             <button 
                                 className={`confirmButton ${participacoes.includes(id) ? 'confirmed' : ''}`}
                                 onClick={() => confirmarParticipacao(id)}

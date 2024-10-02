@@ -10,10 +10,18 @@ import Login from "./Componentes/Login/login";
 import Servicos from "./Componentes/Servicos/servicos";
 import Navbar from "./Componentes/NavBar/navBar";
 import RecuperarSenha from "./Componentes/RecuperarSenha/recuperarSenha";
-import Admin from "./Componentes/Admin/Admin";
-import HomeAdmin from "./Componentes/Admin/HomeAdmin/homeAdmin";
+import AdminHome from "./Componentes/Admin/AdminHome/adminHome";
+import HomeAdmin from "./Componentes/Admin/PainelAdmin/painelAdmin";
 import Dizimista from "./Componentes/Dizimista/dizimista";
 import Cadastrar from "./Componentes/Cadastrar/cadastrar";
+import AdminDizimista from "./Componentes/Admin/AdminDizimista/adminDizimista";
+import AdminCadastroUsuario from "./Componentes/Admin/AdminCadastroUsuario/adminCadastroUsuario";
+import AdminCadastroAdmin from "./Componentes/Admin/AdminCadastroAdmin/adminCadastroAdmin";
+import AdminClero from "./Componentes/Admin/AdminClero/adminClero";
+import AdminContato from "./Componentes/Admin/AdminContato/adminContato";
+import AdminComunicado from "./Componentes/Admin/AdminComunicado/adminComunicado";
+import AdminServicos from "./Componentes/Admin/AdminServicos/adminServicos";
+
 
 function AppRoutes() {
   return (
@@ -28,10 +36,17 @@ function AppRoutes() {
         <Route path="/clero" element={<Clero />} />
         <Route path="/servicos" element={<Servicos />} />
         <Route path="/recuperarSenha" element={<RecuperarSenha />} />
-        <Route path="/admin" element = {<Admin />} />
+        <Route path="/adminHome" element={<AdminHome />} />
         <Route path="/homeAdmin" element = {<HomeAdmin />} />
         <Route path="/dizimista" element = {<Dizimista />} />
         <Route path="/cadastrar" element = {<Cadastrar />} />
+        <Route path="/adminDizimista" element = {<AdminDizimista />} />
+        <Route path="/adminCadastroUsuario" element = {<AdminCadastroUsuario />} />
+        <Route path="/adminCadastroAdmin" element = {<AdminCadastroAdmin/>} />
+        <Route path="/adminClero" element = {<AdminClero />} />
+        <Route path="/adminContato" element = {<AdminContato/>} />
+        <Route path="/adminServicos" element = {<AdminServicos/>} />
+        <Route path="/adminComunicado" element = {<AdminComunicado/>} />
         
       </Routes>
       <Footer />

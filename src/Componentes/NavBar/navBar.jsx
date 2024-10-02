@@ -1,28 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navBar.css";
 import img from "../../Assets/soa jose.jpeg";
-
-// importação de icones
 import { FaHeart } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  // função para mostrar a barra de navegação
   const [menu, setMenu] = useState("menu");
+  const [transparente, setTransparente] = useState("navbar");
+
   const showNavbar = () => {
     setMenu("showNavbar menu");
   };
-
-  // função para remover a barra de navegação
 
   const removeNavbar = () => {
     setMenu("menu");
   };
 
-  // função para adicionar um fundo à barra de navegação
-  const [transparente, setTransparente] = useState("navbar");
   const addBg = () => {
     if (window.scrollY >= 10) {
       setTransparente("navbar addBackground");
@@ -30,7 +25,13 @@ function Navbar() {
       setTransparente("navbar");
     }
   };
-  window.addEventListener("scroll", addBg);
+
+  useEffect(() => {
+    window.addEventListener("scroll", addBg);
+    return () => {
+      window.removeEventListener("scroll", addBg);
+    };
+  }, []);
 
   return (
     <div className={transparente}>
@@ -44,7 +45,6 @@ function Navbar() {
       </div>
 
       <div className={menu}>
-        {/*<div className="menu"> adiciona {menu} ao menu*/}
         <ul>
           <li className="navList" onClick={removeNavbar}>
             <Link to="comunicados" className="link">
@@ -73,26 +73,24 @@ function Navbar() {
           </li>
           <li className="navList" onClick={removeNavbar}>
             <Link to="dizimista" className="link">
-               Dizimista
+              Dizimista
             </Link>
           </li>
           <li className="navList" onClick={removeNavbar}>
             <Link to="homeAdmin" className="link">
-               Painel Adm
+              Painel Adm
             </Link>
           </li>
-          <li className="navList liBtn" onClick={removeNavbar}>
-            <button className="contactBtn btn">
-              <Link to="Doar">Faça Sua Doação</Link>
-                <FaHeart className="iconHeart" /> 
-            </button>
-          </li>
         </ul>
-        {/* ícone para fechar a barra de navegação */}
         <AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar} />
+        <div className="botaoDOAR">
+          <button className="contactBtn btn">
+            <Link to="Doar">Faça Sua Doação</Link>
+            <FaHeart className="iconHeart" />
+          </button>
+        </div>
       </div>
 
-      {/* ícone para abrir/mostrar em dispositivos pequenos */}
       <PiDotsNineBold className="icon menuIcon" onClick={showNavbar} />
     </div>
   );

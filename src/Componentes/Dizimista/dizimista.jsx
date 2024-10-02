@@ -28,6 +28,11 @@ function Dizimista({ usuario }) {
     setValor("");
   };
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(qrCodeUrl);
+    alert("URL do QR Code copiada!");
+  };
+
   return (
     <div className="Dizimista container section">
       <div className="secContainer">
@@ -42,7 +47,7 @@ function Dizimista({ usuario }) {
           </p>
         </div>
 
-        <div className="dizimoForm" data-aos="fade-up">
+        <div className="dizimoForm">
           <form onSubmit={handleSubmit}>
             <div className="formGroup">
               <label htmlFor="mes">Mês:</label>
@@ -96,13 +101,16 @@ function Dizimista({ usuario }) {
         </div>
 
         {qrCodeUrl && (
-          <div className="qrCodeSection" data-aos="fade-up">
+          <div className="qrCodeSection">
             <h2>Escaneie o QR Code</h2>
             <QRCodeCanvas value={qrCodeUrl} size={200} />
+            <button className="copyButton" onClick={copyToClipboard}>
+              Copiar QR Code
+            </button>
           </div>
         )}
 
-        <div className="pagamentosEfetuados" data-aos="fade-up">
+        <div className="pagamentosEfetuados">
           <h2>Pagamentos Efetuados</h2>
           <ul>
             {pagamentos.map((pagamento, index) => (

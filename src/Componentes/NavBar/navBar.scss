@@ -53,17 +53,14 @@
   outline: none;
   transition: 1s ease-in-out;
   white-space: nowrap;
-
 }
 
-.iconHeart{
-    font-size: 20px;
-    vertical-align: middle;
-    margin-left: 10px;
-    color: red;
-   
+.iconHeart {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: red;
 }
-
 
 .contactBtn:hover {
   transition: 1s ease-in-out;
@@ -95,9 +92,9 @@
 }
 
 .navbar {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
@@ -127,7 +124,7 @@
     .menu {
       position: absolute;
       width: 70%;
-      top: -100rem;
+      top: -120rem;
       right: 50%;
       left: 50%;
       transform: translate(-50%);
@@ -155,14 +152,20 @@
     color: var(--whiteColor);
     font-size: var(--h1FontSize);
     margin: 1rem;
+    
+    
     &:hover {
       color: var(--primaryColorDark);
     }
   }
 
+  .menuIcon{
+    margin-left: 550px;
+  }
+
   .closeIcon {
     position: absolute;
-    bottom: -35px;
+    bottom: -40px;
     right: 50%;
     left: 50%;
     transform: translate(-70%);
@@ -200,6 +203,10 @@
     li {
       color: var(--blackColor);
     }
+  }
+  .botaoDOAR {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -245,13 +252,13 @@
 
 @media screen and (min-width: 960px) {
   .navbar {
-    padding: 2rem 10rem;
+    padding: 2em 10rem;
   }
 }
 
 @media screen and (min-width: 1240px) {
   .navbar {
-    padding: 2rem 14rem;
+    padding: 2.5rem 14rem;
   }
 }
 

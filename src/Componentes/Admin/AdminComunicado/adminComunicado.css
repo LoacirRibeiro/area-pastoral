@@ -1,0 +1,56 @@
+.AdminComunicados .secContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.AdminComunicados .secHeader {
+  margin-bottom: 20px;
+}
+.AdminComunicados .mensagem {
+  color: green;
+  margin-bottom: 10px;
+}
+.AdminComunicados .cadastroForm {
+  margin-bottom: 30px;
+}
+.AdminComunicados .cadastroForm .inputGroup {
+  margin-bottom: 15px;
+}
+.AdminComunicados .cadastroForm .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.AdminComunicados .cadastroForm .inputGroup input,
+.AdminComunicados .cadastroForm .inputGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminComunicados .cadastroForm .cadastroButton {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminComunicados .cadastroForm .cadastroButton:hover {
+  background-color: #4cae4c;
+}
+.AdminComunicados .comunicadosCadastrados ul {
+  list-style-type: none;
+  padding: 0;
+}
+.AdminComunicados .comunicadosCadastrados ul .comunicado {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.AdminComunicados .comunicadosCadastrados ul .comunicado .comunicadoInfo {
+  margin-bottom: 10px;
+}
+.AdminComunicados .comunicadosCadastrados ul .comunicado .comunicadoActions button {
+  margin-right: 5px;
+}/*# sourceMappingURL=adminComunicado.css.map */

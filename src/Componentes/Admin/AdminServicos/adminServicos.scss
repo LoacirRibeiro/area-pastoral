@@ -1,0 +1,75 @@
+.AdminServicos {
+    .secContainer {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .secHeader {
+      margin-bottom: 20px;
+    }
+  
+    .mensagem {
+      color: green;
+      margin-bottom: 10px;
+    }
+  
+    .cadastroForm {
+      margin-bottom: 30px;
+  
+      .inputGroup {
+        margin-bottom: 15px;
+  
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+  
+        input,
+        textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+  
+      .cadastroButton {
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #4cae4c;
+        }
+      }
+    }
+  
+    .servicosCadastrados {
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        .servico {
+          border: 1px solid #eee;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+  
+          .servicoInfo {
+            margin-bottom: 10px;
+          }
+  
+          .servicoActions {
+            button {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

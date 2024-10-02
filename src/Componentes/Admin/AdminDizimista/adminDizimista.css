@@ -1,0 +1,61 @@
+.AdminDizimista .secContainer {
+  margin-top: 80px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.AdminDizimista .secContainer .secHeader {
+  margin-bottom: 20px;
+}
+.AdminDizimista .secContainer .secHeader h1 {
+  color: #333;
+  font-size: 24px;
+}
+.AdminDizimista .secContainer .dizimistaSearch, .AdminDizimista .secContainer .relatorioForm, .AdminDizimista .secContainer .pagamentosEfetuados, .AdminDizimista .secContainer .relatoriosGerados {
+  margin-bottom: 20px;
+}
+.AdminDizimista .secContainer .dizimistaSearch h2, .AdminDizimista .secContainer .relatorioForm h2, .AdminDizimista .secContainer .pagamentosEfetuados h2, .AdminDizimista .secContainer .relatoriosGerados h2 {
+  color: #e76f51;
+  margin-bottom: 10px;
+}
+.AdminDizimista .secContainer .dizimistaSearch input, .AdminDizimista .secContainer .dizimistaSearch select, .AdminDizimista .secContainer .relatorioForm input, .AdminDizimista .secContainer .relatorioForm select, .AdminDizimista .secContainer .pagamentosEfetuados input, .AdminDizimista .secContainer .pagamentosEfetuados select, .AdminDizimista .secContainer .relatoriosGerados input, .AdminDizimista .secContainer .relatoriosGerados select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+}
+.AdminDizimista .secContainer .dizimistaSearch button, .AdminDizimista .secContainer .relatorioForm button, .AdminDizimista .secContainer .pagamentosEfetuados button, .AdminDizimista .secContainer .relatoriosGerados button {
+  background-color: #e76f51;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminDizimista .secContainer .dizimistaSearch button:hover, .AdminDizimista .secContainer .relatorioForm button:hover, .AdminDizimista .secContainer .pagamentosEfetuados button:hover, .AdminDizimista .secContainer .relatoriosGerados button:hover {
+  background-color: #d65f39;
+}
+.AdminDizimista .secContainer .pagamentosEfetuados ul {
+  list-style-type: none;
+  padding: 0;
+}
+.AdminDizimista .secContainer .pagamentosEfetuados ul .pagamentoItem {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.AdminDizimista .secContainer .relatoriosGerados ul {
+  list-style-type: none;
+  padding: 0;
+}
+.AdminDizimista .secContainer .relatoriosGerados ul li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}/*# sourceMappingURL=adminDizimista.css.map */

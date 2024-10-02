@@ -1,0 +1,90 @@
+.AdminGerenciamento {
+  padding: 20px;
+}
+.AdminGerenciamento .secHeader {
+  margin-bottom: 20px;
+}
+.AdminGerenciamento .mensagem {
+  color: green;
+  margin-bottom: 15px;
+}
+.AdminGerenciamento .cadastroForm {
+  margin-bottom: 20px;
+}
+.AdminGerenciamento .cadastroForm h2 {
+  margin-bottom: 15px;
+}
+.AdminGerenciamento .inputGroup {
+  margin-bottom: 15px;
+}
+.AdminGerenciamento .inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+.AdminGerenciamento .inputGroup input,
+.AdminGerenciamento .inputGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminGerenciamento .inputGroup textarea {
+  height: 100px;
+  resize: vertical;
+}
+.AdminGerenciamento .cadastroButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminGerenciamento .cadastroButton:hover {
+  background-color: #45a049;
+}
+.AdminGerenciamento .itensCadastrados {
+  margin-top: 20px;
+}
+.AdminGerenciamento .itensCadastrados .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.AdminGerenciamento .itensCadastrados .item .itemImage {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+.AdminGerenciamento .itensCadastrados .item .itemInfo {
+  flex: 1;
+}
+.AdminGerenciamento .itensCadastrados .item .itemInfo h3 {
+  margin: 0 0 5px;
+}
+.AdminGerenciamento .itensCadastrados .item .itemActions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.AdminGerenciamento .itensCadastrados .item .itemActions button:first-of-type {
+  background-color: #2196f3;
+  color: white;
+}
+.AdminGerenciamento .itensCadastrados .item .itemActions button:first-of-type:hover {
+  background-color: #1e88e5;
+}
+.AdminGerenciamento .itensCadastrados .item .itemActions button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+.AdminGerenciamento .itensCadastrados .item .itemActions button:last-of-type:hover {
+  background-color: #e53935;
+}/*# sourceMappingURL=adminClero.css.map */

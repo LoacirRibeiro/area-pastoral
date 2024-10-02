@@ -9,13 +9,13 @@ import image1 from "../../Assets/joey.jpeg";
 const properties = [
   {
     id: 1,
-    image: image1,
+    imagem: image1,
     name: "Fotos da comunidade, Festejo, Etc.",
     desc: "orem ipsum dolor sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido. É uma seqüência de palavras latinas que, como estão posicionadas, não formem frases com um sentido completo, mas dão vida a um texto de teste útil para preencher",
   },
   {
     id: 2,
-    image: image1,
+    imagem: image1,
     name: "Fotos da comunidade, Festejo, Etc.",
     desc: "orem ipsum dolor sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido. É uma seqüência de palavras latinas que, como estão posicionadas, não formem frases com um sentido completo, mas dão vida a um texto de teste útil para preencher",
   },
@@ -41,10 +41,10 @@ function Home() {
       </div>
 
       <div className="primaryListings">
-        {properties.map(({ id, image, name, desc }) => (
+        {properties.map(({ id, imagem, name, desc }) => (
           <div key={id} className="listing" data-aos="fade-up">
             <div className="imgDiv">
-              <img src={image} alt={name} />
+              <img src={imagem} alt={name} />
             </div>
             <div className="info">
               <h2 className="name">{name}</h2>
