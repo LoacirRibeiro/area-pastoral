@@ -28,7 +28,12 @@
   margin-top: 80px;
 }
 .comunidade .secContainer .secHeader .orangeText {
-  color: var(--orangeColor);
+  color: var(--whiteColor);
+  background-color: #B24700;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
 }
 .comunidade .secContainer .secHeader .title {
   display: block;

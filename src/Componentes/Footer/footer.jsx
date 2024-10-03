@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         <div data-aos='fade-up' className="footerLinks">
-          <span className="linkTitle">Informaçoẽs Ùteis</span>
+          <span className="linkTitle">Menu</span>
           <li>
             <a href="#">Comunicados</a>
           </li>
@@ -53,6 +53,7 @@ function Footer() {
             <a href="#">Login</a>
           </li>
         </div>       
+              
       </div>
     </div>
   );

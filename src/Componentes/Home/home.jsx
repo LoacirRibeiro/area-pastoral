@@ -30,9 +30,9 @@ function Home() {
     <div className="comunidade container section">
     <div className="secContainer">
       <div className="secHeader">
-        <span className="orangeText">Comunidade</span>
+        <span className="orangeText">Área Pastoral Missionária São José de Anchieta</span>
         <h1 data-aos="fade-up" className="title">
-          Conheça nossa Comunidade
+          Eventos da nossa Área Pastoral
           <span data-aos="fade-up" className="orangeDot"> . </span>
         </h1>
         <p data-aos="fade-up">

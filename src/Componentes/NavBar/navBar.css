@@ -89,7 +89,7 @@
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
-  background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+  background: linear-gradient(40deg, #7D0E0E, #4A0B0B);
   z-index: 1000;
 }
 .navbar .logoDiv {
@@ -116,7 +116,7 @@
     right: 50%;
     left: 50%;
     transform: translate(-50%);
-    background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+    background: linear-gradient(40deg, #7D0E0E, #B52B2B);
     padding: 2rem;
     border-radius: var(--borderRadius);
     transition: 0.8s ease-in-out;
@@ -152,7 +152,7 @@
   right: 50%;
   left: 50%;
   transform: translate(-70%);
-  background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+  background: linear-gradient(40deg, #7D0E0E, #B52B2B);
   padding: 10px;
   height: 50px;
   width: 50px;
@@ -164,7 +164,7 @@
 }
 
 .addBackground {
-  background: rgb(112, 112, 248);
+  background: linear-gradient(40deg, #7D0E0E, #4A0B0B);
   transition: 0.2s ease-in-out;
 }
 .addBackground .logoDiv .icon,
@@ -183,6 +183,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar .menuIcon {
+    width: 25px;
+    margin-left: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
   .navbar .menuIcon {
     width: 15px;

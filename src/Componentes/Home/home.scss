@@ -35,7 +35,12 @@
       margin-top: 80px;
 
       .orangeText {
-        color: var(--orangeColor);
+        color: var(--whiteColor);
+        background-color:#B24700;
+        padding: 2rem;
+        border-radius: 8px;
+        width: 100%;
+        display: flex;
       }
 
       .title {

@@ -27,7 +27,7 @@ function Comunicado() {
         <div className="Comunicados container section">
             <div className="secContainer">
                 <div className="secHeader">
-                    <span className="orangeText">Comunicados</span>
+                    <span className="orangeText">Avisos da Comunidade.</span>
                     <h1 className="title">
                         Fique por Dentro das Novidades
                         <span className="orangeDot">.</span>
