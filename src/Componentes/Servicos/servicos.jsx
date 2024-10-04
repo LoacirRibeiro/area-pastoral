@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 import './servicos.css';
 
+
+const useAuth = () => {
+    return {
+        user: {
+            name: "João", // Substitua isso pela lógica real de autenticação
+        },
+    };
+};
+
 function Servicos() {
+    const { user } = useAuth(); // Obtém o usuário autenticado
     const [participacoes, setParticipacoes] = useState([]);
 
     const servicos = [
@@ -26,8 +36,8 @@ function Servicos() {
     ];
 
     const confirmarParticipacao = (id) => {
-        if (!participacoes.includes(id)) {
-            setParticipacoes([...participacoes, id]);
+        if (!participacoes.some(participante => participante.id === id)) {
+            setParticipacoes(prev => [...prev, { id, nome: user.name }]);
         }
     };
 
@@ -50,14 +60,24 @@ function Servicos() {
                             <p className="servicoDate">{date}</p>
                             <p className="servicoContent">{desc}</p>
                             <button 
-                                className={`confirmButton ${participacoes.includes(id) ? 'confirmed' : ''}`}
+                                className={`confirmButton ${participacoes.some(participante => participante.id === id) ? 'confirmed' : ''}`}
                                 onClick={() => confirmarParticipacao(id)}
-                                disabled={participacoes.includes(id)}
+                                disabled={participacoes.some(participante => participante.id === id)}
                             >
-                                {participacoes.includes(id) ? 'Participação Confirmada' : 'Confirmar Participação'}
+                                {participacoes.some(participante => participante.id === id) ? 'Participação Confirmada' : 'Confirmar Participação'}
                             </button>
                         </div>
                     ))}
+                </div>
+
+                {/* Exibir nomes dos participantes confirmados */}
+                <div className="participantes">
+                    <h3>Participantes Confirmados:</h3>
+                    <ul>
+                        {participacoes.map((participante, index) => (
+                            <li key={index}>{participante.nome} - {servicos.find(servico => servico.id === participante.id)?.title}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>

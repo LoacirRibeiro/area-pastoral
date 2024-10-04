@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import "./footer.css";
-import img from "../../Assets/brasao-horizontal.png";
-import img1 from "../../Assets/logo.jpeg";
+
+import img from "../../Assets/imgFooter.jpeg";
 
 // importação de icones
 
 import { ImFacebook } from "react-icons/im";
-import { BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   useEffect(() => {
@@ -24,35 +25,55 @@ function Footer() {
           <div className="footerLogo">
             <img className="img" src={img} alt="" />
           </div>
-          
+
           <p>Nossa missão é criar um lugar para as pessoas viverem em FÉ!</p>
           <div className="socials flex">
-            <ImFacebook className="icon" />
-            <BsTwitter className="icon" />
-            <AiFillInstagram className="icon" />
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" >
+              <ImFacebook className="icon" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/sjanchieta_?igsh=aWs5NjhjeXo5dWx4"
+              target="_blank" rel="noreferrer">
+              <AiFillInstagram className="icon" />
+            </a>
+
+            <a
+              href="https://wa.me/556391399447"
+              target="_blank" rel="noreferrer">
+              <IoLogoWhatsapp className="icon" />
+            </a>
           </div>
           <div className="footerReact">
-            <span>Feito com Amor Por</span>
-            <li>Loacir & Fernado</li>
+            <span>Feito com Amor</span>
           </div>
         </div>
 
-        
-
         <div data-aos="fade-up" className="footerLinks">
           <span className="linkTitle">Menu</span>
+          
           <li>
-            <a href="#">Comunicados</a>
+          <Link to="comunicados" className="link">
+              Comunicado
+            </Link>
           </li>
           <li>
-            <a href="#">Clero</a>
+          <Link to="clero" className="link">
+              Clero
+            </Link>
           </li>
           <li>
-            <a href="#">Contatos</a>
+          <Link to="contatos" className="link">
+              Contato
+            </Link>
           </li>
           <li>
-            <a href="#">Login</a>
+          <Link to="login" className="link">
+              Login
+            </Link>
           </li>
+          
+         
         </div>
       </div>
     </div>

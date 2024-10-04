@@ -77,6 +77,38 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       &:hover {
         box-shadow: 0 4px 6px var(--shandowColor);
       }
+      .pagination {
+  display: flex;
+  justify-content: center; // Centraliza a paginação
+  margin: 20px 0; // Espaçamento acima e abaixo da paginação
+
+  button {
+    padding: 10px 25px; // Espaçamento interno dos botões
+    background-color: var(--primaryColor); // Cor de fundo
+    color: white; // Cor do texto
+    border: none; // Remove a borda padrão
+    border-radius: 5px; // Bordas arredondadas
+    cursor: pointer; // Cursor de ponteiro ao passar o mouse
+    transition: background-color 0.3s; // Transição suave para a cor de fundo
+    margin: 0 5px; // Espaçamento lateral entre os botões
+
+    &:disabled {
+      background-color: grey; // Cor de fundo quando desabilitado
+      cursor: not-allowed; // Cursor de não permitido
+    }
+
+    &:hover:not(:disabled) {
+      background-color: darken(var(--primaryColor), 10%); // Cor ao passar o mouse
+    }
+  }
+
+  span {
+    align-self: center; // Centraliza o texto de página
+    margin: 0 10px; // Espaçamento lateral
+    font-size: var(--normalFontSize); // Tamanho da fonte
+    color: var(--primaryColorDark); // Cor do texto
+  }
+}
 
       .listing {
         

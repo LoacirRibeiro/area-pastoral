@@ -59,7 +59,8 @@ function Comunidade() {
               <div className="info">
                  <p>{desc}</p>
               </div>
-            </div>           
+            </div>
+           
           ))}
         </div>
 

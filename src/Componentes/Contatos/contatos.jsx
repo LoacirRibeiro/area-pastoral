@@ -38,12 +38,12 @@ function Contatos (){
             </div>
     
             <div className="contactInfo" data-aos="fade-up">
-                <h2>Informações de Contato</h2>
-                <p><strong>Endereço:</strong> Quadra 4, rua SH 3, Lote 26 - Jardim Santa Helena</p>
-                <p><strong>Telefone:</strong> (63) 3218-8400</p>
-                <p><strong>E-mail:</strong> contato@igreja.com</p>
-                <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, 9h - 17h</p>
-            </div>
+                    <h2>Informações de Contato</h2>
+                    <p><strong>Endereço:</strong> Quadra 4, rua SH 3, Lote 26 - Jardim Santa Helena</p>
+                    <p><strong>Telefone:</strong> <a href="tel:+556391399447">63 9139-9447</a></p>
+                    <p><strong>E-mail:</strong> <a href="mailto:areamissionariasaojose@gmail.com">areamissionariasaojose@gmail.com</a></p>
+                    <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, 9h - 17h</p>
+                </div>
         </div>
     </div>
     
