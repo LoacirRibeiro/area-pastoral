@@ -101,7 +101,7 @@ function Dizimista({ usuario }) {
         </div>
 
         {qrCodeUrl && (
-          <div className="qrCodeSection">
+          <div className="qrCodeSections">
             <h2>Escaneie o QR Code</h2>
             <QRCodeCanvas value={qrCodeUrl} size={200} />
             <button className="copyButton" onClick={copyToClipboard}>

@@ -82,15 +82,28 @@
 .Dizimista .secContainer .dizimoForm .submitBtn:hover {
   background-color: var(--primaryColorDark);
 }
-.Dizimista .secContainer .qrCodeSection {
+.Dizimista .secContainer .qrCodeSections {
   display: grid;
   justify-content: center;
-  margin-top: 2rem;
   text-align: center;
 }
-.Dizimista .secContainer .qrCodeSection h2 {
+.Dizimista .secContainer .qrCodeSections h2 {
   margin-bottom: 1rem;
   font-size: var(--h2FontSize);
+  color: var(--primaryColorDark);
+}
+.Dizimista .secContainer .qrCodeSections .copyButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Dizimista .secContainer .qrCodeSections .copyButton:hover {
+  background-color: var(--primaryColorDark);
 }
 .Dizimista .secContainer .pagamentosEfetuados {
   margin-top: 2rem;
@@ -98,6 +111,7 @@
 .Dizimista .secContainer .pagamentosEfetuados h2 {
   margin-bottom: 1rem;
   font-size: var(--h2FontSize);
+  color: var(--primaryColorDark);
 }
 .Dizimista .secContainer .pagamentosEfetuados ul {
   list-style-type: none;
@@ -111,7 +125,7 @@
   box-shadow: 0 2px 5px var(--shadowColor);
 }
 .Dizimista .secContainer .pagamentosEfetuados ul .pagamentoItem span {
-  display: block;
+  display: inline-block;
   color: var(--blackColor);
   font-size: var(--normalFontSize);
 }

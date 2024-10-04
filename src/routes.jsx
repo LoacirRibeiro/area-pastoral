@@ -21,6 +21,9 @@ import AdminClero from "./Componentes/Admin/AdminClero/adminClero";
 import AdminContato from "./Componentes/Admin/AdminContato/adminContato";
 import AdminComunicado from "./Componentes/Admin/AdminComunicado/adminComunicado";
 import AdminServicos from "./Componentes/Admin/AdminServicos/adminServicos";
+import Comunidade from "./Componentes/Comunidade/comunidade";
+import AdminComunidade from "./Componentes/Admin/AdminComunidade/adminComunidade";
+
 
 
 function AppRoutes() {
@@ -40,6 +43,7 @@ function AppRoutes() {
         <Route path="/homeAdmin" element = {<HomeAdmin />} />
         <Route path="/dizimista" element = {<Dizimista />} />
         <Route path="/cadastrar" element = {<Cadastrar />} />
+        <Route path="/comunidade" element = {<Comunidade />} />
         <Route path="/adminDizimista" element = {<AdminDizimista />} />
         <Route path="/adminCadastroUsuario" element = {<AdminCadastroUsuario />} />
         <Route path="/adminCadastroAdmin" element = {<AdminCadastroAdmin/>} />
@@ -47,7 +51,7 @@ function AppRoutes() {
         <Route path="/adminContato" element = {<AdminContato/>} />
         <Route path="/adminServicos" element = {<AdminServicos/>} />
         <Route path="/adminComunicado" element = {<AdminComunicado/>} />
-        
+        <Route path="/adminComunidade" element = {<AdminComunidade/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

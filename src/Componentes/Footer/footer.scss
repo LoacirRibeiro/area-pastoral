@@ -54,9 +54,7 @@
         font-size: var(--h1FontSize);
 
         .img {
-          margin-right: 0.5rem;
-          width: 50px;
-          border-radius: 50%;
+          width: 200px;
         }
       }
 
@@ -93,6 +91,7 @@
       }
     }
 
+   
     .footerLinks {
       display: grid;
       row-gap: 1rem;
@@ -142,6 +141,7 @@
       font-weight: 500;
     }
   }
+ 
 }
 
 @media screen and (min-width: 448px) {

@@ -11,6 +11,7 @@ const items = [
   { id: 6, title: "Clero", route: "/adminClero" },
   { id: 7, title: "Contato", route: "/adminContato" },
   { id: 8, title: "Home", route: "/adminHome" },
+  { id: 9, title: "Comunidade", route: "/adminComunidade" },
 ];
 
 function PainelAdmin() {

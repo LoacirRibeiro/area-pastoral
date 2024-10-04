@@ -43,11 +43,11 @@ function Home() {
       <div className="primaryListings">
         {properties.map(({ id, imagem, name, desc }) => (
           <div key={id} className="listing" data-aos="fade-up">
+              <h2 className="name">{name}</h2>
             <div className="imgDiv">
               <img src={imagem} alt={name} />
             </div>
             <div className="info">
-              <h2 className="name">{name}</h2>
               <p>{desc}</p>
             </div>
           </div>

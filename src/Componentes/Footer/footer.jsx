@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./footer.css";
-import img from '../../Assets/soa jose.jpeg'
+import img from "../../Assets/brasao-horizontal.png";
+import img1 from "../../Assets/logo.jpeg";
 
 // importação de icones
 
@@ -12,20 +13,18 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Footer() {
-
-  useEffect (() => {
-       Aos.init({duration: 2000})
-     }, [])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className="footer">
       <div className="secContainer container grid">
-        
-        <div data-aos='fade-up'className="logoDiv">
+        <div data-aos="fade-up" className="logoDiv">
           <div className="footerLogo">
             <img className="img" src={img} alt="" />
-            <span> Área Pastoral Missionária São José de Anchieta </span>
           </div>
+          
           <p>Nossa missão é criar um lugar para as pessoas viverem em FÉ!</p>
           <div className="socials flex">
             <ImFacebook className="icon" />
@@ -38,7 +37,9 @@ function Footer() {
           </div>
         </div>
 
-        <div data-aos='fade-up' className="footerLinks">
+        
+
+        <div data-aos="fade-up" className="footerLinks">
           <span className="linkTitle">Menu</span>
           <li>
             <a href="#">Comunicados</a>
@@ -52,8 +53,7 @@ function Footer() {
           <li>
             <a href="#">Login</a>
           </li>
-        </div>       
-              
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./navBar.css";
-import img from "../../Assets/soa jose.jpeg";
+import img from "../../Assets/logo.jpeg";
 import { FaHeart } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
@@ -52,6 +52,11 @@ function Navbar() {
             </Link>
           </li>
           <li className="navList" onClick={removeNavbar}>
+            <Link to="comunidade" className="link">
+              Comunidade
+            </Link>
+          </li>
+          <li className="navList" onClick={removeNavbar}>
             <Link to="clero" className="link">
               Clero
             </Link>
@@ -84,7 +89,7 @@ function Navbar() {
         </ul>
         <AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar} />
         <div className="botaoDOAR">
-          <button className="contactBtn btn">
+          <button className="contactBtn btn" onClick={removeNavbar}>
             <Link to="Doar">Faça Sua Doação</Link>
             <FaHeart className="iconHeart" />
           </button>

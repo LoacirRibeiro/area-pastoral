@@ -50,9 +50,7 @@
   font-size: var(--h1FontSize);
 }
 .footer .secContainer .logoDiv .footerLogo .img {
-  margin-right: 0.5rem;
-  width: 50px;
-  border-radius: 50%;
+  width: 200px;
 }
 .footer .secContainer .logoDiv p {
   max-width: 200px;

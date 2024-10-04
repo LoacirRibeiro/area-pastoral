@@ -99,15 +99,29 @@
       }
     }
 
-    .qrCodeSection {
+    .qrCodeSections {
       display: grid;
       justify-content: center;
-      margin-top: 2rem;
       text-align: center;
 
       h2 {
         margin-bottom: 1rem;
         font-size: var(--h2FontSize);
+        color: var(--primaryColorDark);
+      }
+      .copyButton {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--primaryColor);
+        color: var(--whiteColor);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      
+        &:hover {
+          background-color: var(--primaryColorDark);
+        }
       }
     }
 
@@ -117,6 +131,7 @@
       h2 {
         margin-bottom: 1rem;
         font-size: var(--h2FontSize);
+        color: var(--primaryColorDark);
       }
 
       ul {
@@ -131,7 +146,7 @@
           box-shadow: 0 2px 5px var(--shadowColor);
 
           span {
-            display: block;
+            display: inline-block;
             color: var(--blackColor);
             font-size: var(--normalFontSize);
           }
