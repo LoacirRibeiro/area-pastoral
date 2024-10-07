@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import "./comunidade.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 // Importação de imagens
 import image1 from "../../Assets/joey.jpeg";
+
 
 
 const properties = [
@@ -35,6 +37,8 @@ const properties = [
 ];
 
 function Comunidade() {
+  
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -89,6 +93,7 @@ function Comunidade() {
         <div className="google-maps-container">
       <h2>Como Chegar</h2>
       <div className="map">
+      {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.8278036222!2d-48.38817069652889!3d-10.181263300564719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d6827a0c12343f%3A0x4227c3b510f59972!2sAv.%20An%C3%A1polis%2C%201090%20-%20Jardim%20Aeroporto%20(Taquaralto)!5e0!3m2!1spt-BR!2sbr!4v1689020125642!5m2!1spt-BR!2sbr"
           width="100%"

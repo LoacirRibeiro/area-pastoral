@@ -58,7 +58,7 @@
         font-size: var(--h1FontSize);
 
         .img {
-          width: 200px;
+          width: 320px;
         }
       }
 
@@ -170,7 +170,6 @@
   .footer {
     .secContainer {
       padding: 2rem 0;
-      grid-template-columns: repeat(2, 1fr);
       padding: 15px !important;
     }
   }

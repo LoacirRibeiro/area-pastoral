@@ -38,7 +38,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   .secContainer {
     .secHeader {
       text-align: center;
-      margin-top: 80px;
+      margin-top: 150px;
 
       .orangeText {
         color: var(--whiteColor);
@@ -62,14 +62,14 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         opacity: 0.7;
         font-size: var(--normalFontSize);
         line-height: 20px;
-        padding-bottom: 3rem;
       }
     }
 
     .primaryListings {
+      padding: 0 5px 0 5px;
       display: grid;
       grid-template-columns: 1fr;
-      padding: 50px;
+
       border-radius: var(--borderRadius);
       overflow: hidden;
       transition: box-shadow 0.3s ease-in;
@@ -79,7 +79,10 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       }
 
       @media screen and (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr) !important ; // Exibe duas colunas em telas maiores
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ) !important ; // Exibe duas colunas em telas maiores
       }
 
       .listing {
@@ -126,7 +129,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
           .imgDiv {
             img {
-              width: 320px;
+              width: 380px;
               height: 350px;
               border-radius: 8px;
               object-fit: cover;
@@ -147,7 +150,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
           .imgDiv {
             width: 100%;
             img {
-              width: 280px;
+              width: 320px;
               height: 280px;
               border-radius: 8px;
               object-fit: cover;

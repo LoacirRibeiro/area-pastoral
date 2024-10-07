@@ -38,8 +38,10 @@ function Navbar() {
       <div className="logoDiv">
         <img className="img" src={img} alt="São Jose de Anchieta" />
         <span>
-          <Link to="/" className="link">
-            Àrea Pastoral São José de Anchieta
+          <Link to="/" className="linkLogo">
+            SÃO JOSÉ DE ANCHIETA
+            <h3>ÁREA PASTORAL MISSIONÁRIA</h3>
+            <h2>ARQUEDIOCESE DE PALMAS - TO</h2>
           </Link>
         </span>
       </div>
@@ -89,7 +91,7 @@ function Navbar() {
         </ul>
         <AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar} />
         <div className="botaoDOAR">
-          <button className="contactBtn btn" onClick={removeNavbar}>
+          <button className="contactBtn btn" >
             <Link to="Doar">Faça Sua Doação</Link>
             <FaHeart className="iconHeart" />
           </button>

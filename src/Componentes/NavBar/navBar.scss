@@ -32,7 +32,9 @@
   --borderRadius: 1rem;
 }
 
+
 .link {
+  display: flex;
   color: #fff;
   border-bottom: 1px solid #eee;
 }
@@ -96,9 +98,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
   position: fixed;
-  background: linear-gradient(40deg, #7D0E0E, #4A0B0B);
+  background: linear-gradient(40deg, #7d0e0e, #4a0b0b);
   z-index: 1000;
 
   .logoDiv {
@@ -108,15 +110,32 @@
 
     .img {
       margin-right: 0.5rem;
-      width: 50px;
+      width: 120px;
       border-radius: 50%;
     }
 
     span {
       color: var(--whiteColor);
-      font-size: var(--h2FontSize);
+      font-size: 1.5rem;
       justify-content: center;
       font-weight: 500;
+      .linkLogo {
+        display: grid;
+        font-size: 2rem;
+        color: #fff;
+        opacity: 0.9;
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 450;
+        }
+        h2 {
+          font-size: 1.3rem;
+          color: #fff;
+          opacity: 0.9;
+          font-weight: 450;
+        }
+      }
     }
   }
 
@@ -128,7 +147,7 @@
       right: 50%;
       left: 50%;
       transform: translate(-50%);
-      background: linear-gradient(40deg, #7D0E0E, #B52B2B);
+      background: linear-gradient(40deg, #7d0e0e, #b52b2b);
       padding: 2rem;
       border-radius: var(--borderRadius);
       transition: 0.8s ease-in-out;
@@ -152,14 +171,13 @@
     color: var(--whiteColor);
     font-size: var(--h1FontSize);
     margin: 1rem;
-    
-    
+
     &:hover {
       color: var(--primaryColorDark);
     }
   }
 
-  .menuIcon{
+  .menuIcon {
     margin-left: 550px;
   }
 
@@ -169,7 +187,7 @@
     right: 50%;
     left: 50%;
     transform: translate(-70%);
-    background: linear-gradient(40deg, #7D0E0E, #B52B2B);
+    background: linear-gradient(40deg, #7d0e0e, #b52b2b);
     padding: 10px;
     height: 50px;
     width: 50px;
@@ -183,7 +201,7 @@
 }
 
 .addBackground {
-  background: linear-gradient(40deg, #7D0E0E, #4A0B0B);
+  background: linear-gradient(40deg, #7d0e0e, #4a0b0b);
   transition: 0.2s ease-in-out;
 
   .logoDiv {
@@ -201,7 +219,9 @@
 .menu {
   ul {
     li {
+      display: flex;
       color: var(--blackColor);
+      margin-top: 1rem;
     }
   }
   .botaoDOAR {
@@ -223,7 +243,6 @@
   .navbar {
     .menuIcon {
       width: 15px;
-
     }
   }
 }
@@ -260,6 +279,41 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .logoDiv {
+    padding: 30px;
+  }
+
+  .navbar .logoDiv span {
+    .linkLogo {
+      font-size: 1.1rem;
+      h3 {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .logoDiv {
+  
+  }
+
+  .navbar .logoDiv span {
+    .linkLogo {
+      font-size: 1.3rem;
+      h3 {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 @media screen and (min-width: 960px) {
   .navbar {
     padding: 2em 10rem;

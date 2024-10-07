@@ -26,7 +26,7 @@
 
 .comunidade .secContainer .secHeader {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .comunidade .secContainer .secHeader .orangeText {
   color: var(--whiteColor);
@@ -48,12 +48,11 @@
   opacity: 0.7;
   font-size: var(--normalFontSize);
   line-height: 20px;
-  padding-bottom: 3rem;
 }
 .comunidade .secContainer .primaryListings {
+  padding: 0 5px 0 5px;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 50px;
   border-radius: var(--borderRadius);
   overflow: hidden;
   transition: box-shadow 0.3s ease-in;
@@ -105,7 +104,7 @@
     flex-direction: row;
   }
   .comunidade .secContainer .primaryListings .listing .imgDiv img {
-    width: 320px;
+    width: 380px;
     height: 350px;
     border-radius: 8px;
     -o-object-fit: cover;
@@ -124,7 +123,7 @@
     width: 100%;
   }
   .comunidade .secContainer .primaryListings .listing .imgDiv img {
-    width: 280px;
+    width: 320px;
     height: 280px;
     border-radius: 8px;
     -o-object-fit: cover;

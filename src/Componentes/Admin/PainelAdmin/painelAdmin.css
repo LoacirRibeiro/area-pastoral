@@ -5,6 +5,7 @@
 .home-admin .secContainer .secHeader {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 150px;
 }
 .home-admin .secContainer .secHeader .orangeText {
   color: var(--primaryColor);
