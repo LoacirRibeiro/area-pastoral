@@ -14,7 +14,7 @@
   --inputColor: hsl(330, 12%, 97%);
   --cardColor: hsl(300, 3%, 94%);
   --orangeColor: hsl(24, 84%, 53%);
-  
+
   // Fontes
   --biggestFontSize: 2rem;
   --h1FontSize: 1.6rem;
@@ -26,23 +26,23 @@
   --borderRadius: 1rem;
 }
 
-$primary-color: #7D0E0E;
+$primary-color: #7d0e0e;
 $background-color: rgba(125, 14, 14, 0.1);
-$border-color: #7D0E0E;
+$border-color: #7d0e0e;
 $text-color: #333;
 $border-radius: 10px;
 $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
 // Estilos para a página Comunidade
 .comunidade {
-  .secContainer { 
+  .secContainer {
     .secHeader {
       text-align: center;
       margin-top: 80px;
 
       .orangeText {
         color: var(--whiteColor);
-        background-color: #B24700;
+        background-color: #b24700;
         padding: 2rem;
         border-radius: 8px;
         width: 100%;
@@ -67,8 +67,8 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .primaryListings {
-      display: flex;
-      flex-direction: column; // Mantém as listagens em coluna por padrão
+      display: grid;
+      grid-template-columns: 1fr;
       padding: 50px;
       border-radius: var(--borderRadius);
       overflow: hidden;
@@ -77,58 +77,21 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       &:hover {
         box-shadow: 0 4px 6px var(--shandowColor);
       }
-      .pagination {
-  display: flex;
-  justify-content: center; // Centraliza a paginação
-  margin: 20px 0; // Espaçamento acima e abaixo da paginação
 
-  button {
-    padding: 10px 25px; // Espaçamento interno dos botões
-    background-color: var(--primaryColor); // Cor de fundo
-    color: white; // Cor do texto
-    border: none; // Remove a borda padrão
-    border-radius: 5px; // Bordas arredondadas
-    cursor: pointer; // Cursor de ponteiro ao passar o mouse
-    transition: background-color 0.3s; // Transição suave para a cor de fundo
-    margin: 0 5px; // Espaçamento lateral entre os botões
-
-    &:disabled {
-      background-color: grey; // Cor de fundo quando desabilitado
-      cursor: not-allowed; // Cursor de não permitido
-    }
-
-    &:hover:not(:disabled) {
-      background-color: darken(var(--primaryColor), 10%); // Cor ao passar o mouse
-    }
-  }
-
-  span {
-    align-self: center; // Centraliza o texto de página
-    margin: 0 10px; // Espaçamento lateral
-    font-size: var(--normalFontSize); // Tamanho da fonte
-    color: var(--primaryColorDark); // Cor do texto
-  }
-}
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr) !important ; // Exibe duas colunas em telas maiores
+      }
 
       .listing {
-        
         flex-direction: column; // Imagem em cima do texto
         align-items: center; // Centraliza os itens
         margin-bottom: 30px; // Espaçamento entre listagens
-        padding: .5rem;
+        padding: 0.5rem;
 
-        .imgDivs {
-          height: 200px; // Altura da imagem
-          width: 200px; // Largura da imagem
-          border-radius: var(--borderRadius);
-          overflow: hidden;
-           // Espaçamento inferior
-
-          img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-          }
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
         }
 
         .info {
@@ -151,33 +114,29 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
       @media screen and (min-width: 768px) {
         flex-direction: row; // Muda para linha em telas maiores
-  
+
         .listing {
           flex-direction: row; // Imagem e texto lado a lado
-  
         }
       }
-      
+
       @media screen and (max-width: 595px) {
         .listing {
           flex-direction: row; // Imagem e texto lado a lado
-          
-          .imgDiv{
-         
-            img{
-                width: 320px;
-                height: 350px;
-                border-radius: 8px;
-                object-fit: cover;
-               
+
+          .imgDiv {
+            img {
+              width: 320px;
+              height: 350px;
+              border-radius: 8px;
+              object-fit: cover;
             }
-            .info{
-                p{
-                     margin: 0;
-                }
+            .info {
+              p {
+                margin: 0;
+              }
             }
           }
-
         }
       }
 
@@ -185,17 +144,15 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         .listing {
           flex-direction: row; // Imagem e texto lado a lado
           padding: 10px;
-          .imgDiv{
+          .imgDiv {
             width: 100%;
-            img{
-                width: 280px;
-                height: 280px;
-                border-radius: 8px;
-                object-fit: cover;
-
+            img {
+              width: 280px;
+              height: 280px;
+              border-radius: 8px;
+              object-fit: cover;
             }
           }
-
         }
       }
 
@@ -203,17 +160,15 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         .listing {
           flex-direction: row; // Imagem e texto lado a lado
           padding: 5px;
-          .imgDiv{
+          .imgDiv {
             width: 100%;
-            img{
-                width: 250px;
-                height: 250px;
-                border-radius: 8px;
-                object-fit: cover;
-
+            img {
+              width: 250px;
+              height: 250px;
+              border-radius: 8px;
+              object-fit: cover;
             }
           }
-
         }
       }
     }
@@ -284,7 +239,7 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
       h2 {
         text-align: center;
-        color: #7D0E0E; /* Cor do título */
+        color: #7d0e0e; /* Cor do título */
         font-size: 24px;
         margin-bottom: 15px;
       }
@@ -308,14 +263,14 @@ $shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
           display: inline-block;
           margin-top: 10px;
           padding: 10px 15px;
-          background-color: #7D0E0E; /* Cor de fundo */
+          background-color: #7d0e0e; /* Cor de fundo */
           color: #fff; /* Texto branco */
           text-decoration: none; /* Remove sublinhado */
           border-radius: 5px; /* Bordas arredondadas */
           transition: background-color 0.3s;
 
           &:hover {
-            background-color: #B52B2B; /* Cor ao passar o mouse */
+            background-color: #b52b2b; /* Cor ao passar o mouse */
           }
         }
       }
