@@ -29,6 +29,9 @@
   border-radius: var(--borderRadius);
   box-shadow: 0 4px 10px var(--shadowColor);
 }
+.Dizimista .secContainer {
+  margin-top: 130px;
+}
 .Dizimista .secContainer .secHeader {
   text-align: center;
 }
