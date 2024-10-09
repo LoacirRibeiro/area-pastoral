@@ -23,6 +23,7 @@ import AdminComunicado from "./Componentes/Admin/AdminComunicado/adminComunicado
 import AdminServicos from "./Componentes/Admin/AdminServicos/adminServicos";
 import Comunidade from "./Componentes/Comunidade/comunidade";
 import AdminComunidade from "./Componentes/Admin/AdminComunidade/adminComunidade";
+import ErrorPage from "./Componentes/ErrorPage/errorPage";
 
 
 
@@ -52,6 +53,7 @@ function AppRoutes() {
         <Route path="/adminServicos" element = {<AdminServicos/>} />
         <Route path="/adminComunicado" element = {<AdminComunicado/>} />
         <Route path="/adminComunidade" element = {<AdminComunidade/>} />
+        <Route path="*" element={<ErrorPage />} /> {/* Rota de erro */}
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,34 @@
+/* ErrorPage.css */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% da altura da tela */
+    text-align: center;
+    background-color: #f9f9f9; /* Fundo claro */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ff6600; /* Cor laranja */
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto */
+  }
+  
+  .home-link {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Cor laranja */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Cantos arredondados */
+  }
+  
+  .home-link:hover {
+    background-color: darken(#ff6600, 10%); /* Escurece ao passar o mouse */
+  }
+  
