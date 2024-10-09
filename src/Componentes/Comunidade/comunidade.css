@@ -37,11 +37,10 @@
   display: flex;
 }
 .comunidade .secContainer .secHeader .title {
-  display: block;
-  font-size: var(--h2FontSize);
-  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
   color: var(--primaryColorDark);
-  padding-top: 2rem;
 }
 .comunidade .secContainer .secHeader p {
   color: var(--primaryColorDark);

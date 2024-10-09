@@ -117,12 +117,14 @@ body {
   cursor: pointer;
   margin-bottom: 0.8rem;
 }
-.Contact .contactInfo .divContato .contato .macarrao {
-  overflow-wrap: break-word;
+.Contact .contactInfo .divContato .contato .icons:hover {
+  background-color: #cc5200;
+  transform: translateY(-2px);
 }
 .Contact .contactInfo .divContato .contato .nomeContato {
   margin-bottom: 0.8rem;
   font-size: 15px;
+  font-weight: 600;
 }
 .Contact .contactInfo .divContato .contato p {
   margin: 0.5rem 0;

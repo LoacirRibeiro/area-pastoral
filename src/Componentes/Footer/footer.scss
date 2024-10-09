@@ -1,5 +1,5 @@
 .footer {
-  padding: 1.5em 0;
+  padding: 1.5rem 0;
   width: 100%;
   background: linear-gradient(40deg, #7d0e0e, #4a0b0b);
 
@@ -8,6 +8,7 @@
     gap: 1rem; /* Espaçamento entre as seções */
     text-align: center;
     align-items: start; /* Mantenha o alinhamento para o início */
+    margin-top: 15px;
 
     .logoDiv {
       padding: 1rem;
@@ -73,20 +74,13 @@
         font-size: 30px;
       }
 
-      li {
-        list-style-type: none;
-
-        &:hover {
-          transform: translateY(-3px);
-        }
-      }
-
       a {
         color: #ff6600; /* Cor laranja */
         text-decoration: none; /* Remove o sublinhado padrão */
         transition: color 0.3s; /* Transição suave */
+        justify-content: center;
       }
-      
+
       a:hover {
         color: #8f3b03; /* Um tom mais escuro de laranja ao passar o mouse */
         text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
@@ -94,21 +88,19 @@
     }
   }
 
-    .footerReact {
-      grid-column: 1 / -1; /* Faz com que a copyright ocupe toda a linha */ 
-      text-align: center; /* Centraliza o texto */
-      padding: 1rem; /* Espaçamento interno */
-      width: 100%; /* Largura total */
-      margin: 0 auto;
-      
-      p {
-        color: black;
-        font-size: 15px;
-       
-      }
+  .footerReact {
+    grid-column: 1 / -1; /* Faz com que a copyright ocupe toda a linha */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    margin: 0 auto;
+
+    p {
+      color: black;
+      font-size: 15px;
     }
   }
-
+}
 
 @media screen and (min-width: 640px) {
   .footer {

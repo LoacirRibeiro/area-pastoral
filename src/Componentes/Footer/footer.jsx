@@ -8,6 +8,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 function Footer() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -45,27 +49,27 @@ function Footer() {
         <div data-aos="fade-up" className="footerLinks">
           <span className="linkTitle">Menu</span>
           <li>
-            <Link to="comunidade" className="link">
+            <Link to="Comunidade" className="link" onClick={scrollToTop}>
               Comunidade
             </Link>
           </li>
           <li>
-            <Link to="comunicados" className="link">
+            <Link to="comunicados" className="link" onClick={scrollToTop}>
               Comunicado
             </Link>
           </li>
           <li>
-            <Link to="clero" className="link">
+            <Link to="clero" className="link" onClick={scrollToTop}>
               Clero
             </Link>
           </li>
           <li>
-            <Link to="contatos" className="link">
+            <Link to="contatos" className="link" onClick={scrollToTop}>
               Contato
             </Link>
           </li>
           <li>
-            <Link to="login" className="link">
+            <Link to="login" className="link" onClick={scrollToTop}>
               Login
             </Link>
           </li>
@@ -73,8 +77,8 @@ function Footer() {
 
         <div className="footerReact">
           <p>
-            Copyright Comunidade São José de Anchieta de Palmas © {new Date().getFullYear()}. Feito
-            com ❤️  
+            Copyright Comunidade São José de Anchieta - Palmas-TO ©{" "}
+            {new Date().getFullYear()}. Feito com ❤️
           </p>
         </div>
       </div>

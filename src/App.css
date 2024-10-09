@@ -30,6 +30,10 @@
   --borderRadius: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .flex {
   display: flex;
   align-items: center;

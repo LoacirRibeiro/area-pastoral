@@ -14,9 +14,10 @@
   font-weight: bold;
 }
 .home-admin .secContainer .secHeader .title {
-  font-size: var(--biggestFontSize);
-  color: var(--primaryColorDark);
+  font-size: 2.5rem;
   margin: 0.5rem 0;
+  font-weight: 600;
+  color: var(--primaryColorDark);
 }
 .home-admin .secContainer .secHeader p {
   font-size: var(--normalFontSize);
