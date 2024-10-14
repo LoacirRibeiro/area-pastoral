@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 
 // Importação de imagens
-import image1 from "../../Assets/joey.jpeg";
+import image1 from "../../Assets/Padre-Rafael.png";
 
 
 
