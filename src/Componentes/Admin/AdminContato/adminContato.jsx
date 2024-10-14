@@ -10,27 +10,19 @@ function AdminContato() {
   const [editIndex, setEditIndex] = useState(-1);
   const [mensagemFeedback, setMensagemFeedback] = useState("");
 
-  const cadastrarContato = (e) => {
+  const cadastrarOuAtualizarContato = (e) => {
     e.preventDefault();
-    if (horario && endereco && email && telefone) {
-      const novoContato = { horario, endereco, email, telefone };
-      if (editIndex >= 0) {
-        const contatosAtualizados = [...contatos];
-        contatosAtualizados[editIndex] = novoContato;
-        setContatos(contatosAtualizados);
-        setMensagemFeedback("Contato atualizado com sucesso!");
-        setEditIndex(-1);
-      } else {
-        setContatos([...contatos, novoContato]);
-        setMensagemFeedback("Contato cadastrado com sucesso!");
-      }
-      setHorario("");
-      setEndereco("");
-      setEmail("");
-      setTelefone("");
+    if (editIndex >= 0) {
+      const contatosAtualizados = [...contatos];
+      contatosAtualizados[editIndex] = { horario, endereco, email, telefone };
+      setContatos(contatosAtualizados);
+      setMensagemFeedback("Contato atualizado com sucesso!");
     } else {
-      setMensagemFeedback("Por favor, preencha todos os campos.");
+      const novoContato = { horario, endereco, email, telefone };
+      setContatos([...contatos, novoContato]);
+      setMensagemFeedback("Contato cadastrado com sucesso!");
     }
+    resetForm();
   };
 
   const editarContato = (index) => {
@@ -49,6 +41,14 @@ function AdminContato() {
     }
   };
 
+  const resetForm = () => {
+    setEditIndex(-1);
+    setHorario("");
+    setEndereco("");
+    setEmail("");
+    setTelefone("");
+  };
+
   return (
     <div className="AdminContato container section">
       <div className="secContainer">
@@ -60,8 +60,7 @@ function AdminContato() {
 
         <div className="cadastroForm">
           <h2>{editIndex >= 0 ? "Editar Contato" : "Cadastrar Novo Contato"}</h2>
-          <form onSubmit={cadastrarContato}>
-            
+          <form onSubmit={cadastrarOuAtualizarContato}>
             <div className="inputGroup">
               <label htmlFor="endereco">Endereço:</label>
               <input

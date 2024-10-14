@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .AdminContato {
   padding: 20px;
 }
@@ -15,6 +16,7 @@
   margin-bottom: 15px;
 }
 .AdminContato .inputGroup {
+  position: relative;
   margin-bottom: 15px;
 }
 .AdminContato .inputGroup label {
@@ -26,6 +28,22 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.AdminContato .inputGroup button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.AdminContato .inputGroup button .icon {
+  color: #007bff;
+  font-size: 1.2em;
+}
+.AdminContato .inputGroup button .icon:hover {
+  color: #0056b3; /* Cor do ícone ao passar o mouse */
 }
 .AdminContato .cadastroButton {
   background-color: #4caf50;
@@ -54,6 +72,9 @@
 }
 .AdminContato .contatosCadastrados .contato .contatoInfo h3 {
   margin: 0 0 5px;
+}
+.AdminContato .contatosCadastrados .contato .contatoActions {
+  display: flex;
 }
 .AdminContato .contatosCadastrados .contato .contatoActions button {
   margin-left: 10px;

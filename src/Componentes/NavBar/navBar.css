@@ -144,7 +144,7 @@
     font-size: var(--h3FontSize);
     justify-content: center;
     font-weight: 500;
-    padding: 1rem 0;
+    padding: 0.3rem;
     text-align: center;
     color: var(--whiteColor);
     cursor: pointer;
@@ -195,7 +195,7 @@
 .menu ul li {
   display: flex;
   color: var(--blackColor);
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 .menu .botaoDOAR {
   display: flex;

@@ -4,7 +4,7 @@ import './adminClero.css';
 function AdminClero() {
   const [titulo, setTitulo] = useState("");
   const [descricao, setDescricao] = useState("");
-  const [imagem, setImagem] = useState("");
+  const [imagem, setImagem] = useState(null);
   const [itens, setItens] = useState([]);
   const [editIndex, setEditIndex] = useState(-1);
   const [mensagem, setMensagem] = useState("");
@@ -25,7 +25,7 @@ function AdminClero() {
       }
       setTitulo("");
       setDescricao("");
-      setImagem("");
+      setImagem(null);
     } else {
       setMensagem("Por favor, preencha todos os campos.");
     }
@@ -44,6 +44,10 @@ function AdminClero() {
       setItens(itensAtualizados);
       setMensagem("Item excluído com sucesso!");
     }
+  };
+
+  const handleImageChange = (e) => {
+    setImagem(e.target.files[0]);
   };
 
   return (
@@ -78,12 +82,12 @@ function AdminClero() {
               />
             </div>
             <div className="inputGroup">
-              <label htmlFor="imagem">URL da Imagem:</label>
+              <label htmlFor="imagem">Imagem:</label>
               <input
-                type="text"
+                type="file"
                 id="imagem"
-                value={imagem}
-                onChange={(e) => setImagem(e.target.value)}
+                accept="image/*"
+                onChange={handleImageChange}
                 required
               />
             </div>
@@ -99,7 +103,9 @@ function AdminClero() {
             <ul>
               {itens.map((item, index) => (
                 <li key={index} className="item">
-                  <img src={item.imagem} alt={item.titulo} className="itemImage" />
+                  {item.imagem && (
+                    <img src={URL.createObjectURL(item.imagem)} alt={item.titulo} className="itemImage" />
+                  )}
                   <div className="itemInfo">
                     <h3>{item.titulo}</h3>
                     <p>{item.descricao}</p>

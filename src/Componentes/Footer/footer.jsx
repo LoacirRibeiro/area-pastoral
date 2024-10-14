@@ -73,6 +73,21 @@ function Footer() {
               Login
             </Link>
           </li>
+          <li>
+            <Link to="servicos" className="link" onClick={scrollToTop}>
+              Serviços
+            </Link>
+          </li>
+          <li>
+            <Link to="Dizimista" className="link" onClick={scrollToTop}>
+            Dizimista
+            </Link>
+          </li>
+          <li>
+            <Link to="HomeAdmin" className="link" onClick={scrollToTop}>
+              Painel de Administrativo
+            </Link>
+          </li>
         </div>
 
         <div className="footerReact">

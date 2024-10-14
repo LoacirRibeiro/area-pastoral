@@ -3,7 +3,7 @@ import './adminComunidade.css';
 
 function AdminComunidade() {
   const [titulo, setTitulo] = useState("");
-  const [data, setData] = useState("");
+  const [imagem, setImagem] = useState(null);
   const [descricao, setDescricao] = useState("");
   const [comunicados, setComunicados] = useState([]);
   const [celebracoes, setCelebracoes] = useState([]);
@@ -11,14 +11,13 @@ function AdminComunidade() {
   const [editIndexCelebracao, setEditIndexCelebracao] = useState(-1);
   const [mensagemFeedback, setMensagemFeedback] = useState("");
 
-  // Estado para celebrações
   const [dia, setDia] = useState("");
   const [horario, setHorario] = useState("");
 
   const cadastrarComunicado = (e) => {
     e.preventDefault();
-    if (titulo && data && descricao) {
-      const novoComunicado = { titulo, data, descricao };
+    if (titulo && imagem && descricao) {
+      const novoComunicado = { titulo, imagem, descricao };
       if (editIndexComunicado >= 0) {
         const comunicadosAtualizados = [...comunicados];
         comunicadosAtualizados[editIndexComunicado] = novoComunicado;
@@ -30,7 +29,7 @@ function AdminComunidade() {
         setMensagemFeedback("Comunicado cadastrado com sucesso!");
       }
       setTitulo("");
-      setData("");
+      setImagem(null);
       setDescricao("");
     } else {
       setMensagemFeedback("Por favor, preencha todos os campos.");
@@ -39,7 +38,7 @@ function AdminComunidade() {
 
   const editarComunicado = (index) => {
     setTitulo(comunicados[index].titulo);
-    setData(comunicados[index].data);
+    setImagem(comunicados[index].imagem);
     setDescricao(comunicados[index].descricao);
     setEditIndexComunicado(index);
   };
@@ -52,11 +51,10 @@ function AdminComunidade() {
     }
   };
 
-  // Funções para celebrações
   const cadastrarCelebracao = (e) => {
     e.preventDefault();
     if (dia && horario) {
-      const novaCelebracao = { dia, horario };
+      const novaCelebracao = { dia, horario }; // Mantém o horário no formato 24h
       if (editIndexCelebracao >= 0) {
         const celebracoesAtualizadas = [...celebracoes];
         celebracoesAtualizadas[editIndexCelebracao] = novaCelebracao;
@@ -76,7 +74,7 @@ function AdminComunidade() {
 
   const editarCelebracao = (index) => {
     setDia(celebracoes[index].dia);
-    setHorario(celebracoes[index].horario);
+    setHorario(celebracoes[index].horario); // Manter o horário original
     setEditIndexCelebracao(index);
   };
 
@@ -92,14 +90,14 @@ function AdminComunidade() {
     <div className="AdminComunidade container section">
       <div className="secContainer">
         <div className="secHeader">
-          <h1>Painel Administrativo - Gerenciamento de Comunicados</h1>
+          <h1>Painel Administrativo - Gerenciamento da Comunidade</h1>
         </div>
 
         {mensagemFeedback && <p className="mensagem">{mensagemFeedback}</p>}
 
         {/* Formulário de Comunicados */}
         <div className="cadastroForm">
-          <h2>{editIndexComunicado >= 0 ? "Editar Comunicado" : "Cadastrar Novo Comunicado"}</h2>
+          <h2>{editIndexComunicado >= 0 ? "Editar Comunidade" : "Cadastrar "}</h2>
           <form onSubmit={cadastrarComunicado}>
             <div className="inputGroup">
               <label htmlFor="titulo">Título:</label>
@@ -112,12 +110,12 @@ function AdminComunidade() {
               />
             </div>
             <div className="inputGroup">
-              <label htmlFor="data">Data:</label>
+              <label htmlFor="imagem">Imagem:</label>
               <input
-                type="date"
-                id="data"
-                value={data}
-                onChange={(e) => setData(e.target.value)}
+                type="file"
+                id="imagem"
+                accept="image/*"
+                onChange={(e) => setImagem(e.target.files[0])}
                 required
               />
             </div>
@@ -137,14 +135,16 @@ function AdminComunidade() {
         </div>
 
         <div className="comunicadosCadastrados">
-          <h2>Comunicados Cadastrados</h2>
+          <h2>Cadastros</h2>
           {comunicados.length > 0 ? (
             <ul>
               {comunicados.map((comunicado, index) => (
                 <li key={index} className="comunicado">
                   <div className="comunicadoInfo">
                     <h3>{comunicado.titulo}</h3>
-                    <p>Data: {comunicado.data}</p>
+                    {comunicado.imagem && (
+                      <img src={URL.createObjectURL(comunicado.imagem)} alt="Comunicado" />
+                    )}
                     <p>Descrição: {comunicado.descricao}</p>
                   </div>
                   <div className="comunicadoActions">
