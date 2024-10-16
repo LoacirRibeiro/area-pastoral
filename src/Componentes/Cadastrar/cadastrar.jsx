@@ -6,17 +6,51 @@ function Cadastrar() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState("");
+
+    const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    };
+
+    const validatePassword = (password) => {
+        const minLength = 8;
+        const hasUpperCase = /[A-Z]/.test(password);
+        const hasLowerCase = /[a-z]/.test(password);
+        const hasNumbers = /[0-9]/.test(password);
+        const hasSpecialChars = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+        
+        return (
+            password.length >= minLength &&
+            hasUpperCase &&
+            hasLowerCase &&
+            hasNumbers &&
+            hasSpecialChars
+        );
+    };
 
     const handleCadastro = (e) => {
         e.preventDefault();
-        // Lógica de validação
-        if (password !== confirmPassword) {
-            setErrorMessage("As senhas não correspondem.");
+        // Validações
+        if (!email || !password || !confirmPassword) {
+            setErrorMessage('Por favor, preencha todos os campos.');
+        } else if (!validateEmail(email)) {
+            setErrorMessage('Por favor, insira um email válido.');
+        } else if (!validatePassword(password)) {
+            setErrorMessage('A nova senha deve ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.');
+        } else if (password !== confirmPassword) {
+            setErrorMessage('As senhas não coincidem.');
         } else {
-            // Simulação de cadastro bem-sucedido
-            console.log("Cadastro realizado com sucesso!");
-            // Redirecionar ou realizar outras ações necessárias
+            // Simulação de envio e redefinição de senha bem-sucedida
+            setMessage('Sua senha foi redefinida com sucesso.');
+            setErrorMessage('');
+
+            // Limpar os campos do formulário
+            setEmail('');
+            setPassword('');
+            setUsername('');
+            setConfirmPassword('');
         }
     };
 
@@ -24,6 +58,7 @@ function Cadastrar() {
         <div className="Cadastrar container">
             <div className="cadastrarContainer">
                 <h1 className="title">Cadastrar</h1>
+                {message && <p className="successMessage">{message}</p>}
                 {errorMessage && <p className="error">{errorMessage}</p>}
                 <form onSubmit={handleCadastro}>
                     <div className="inputGroup">
