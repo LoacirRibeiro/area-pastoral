@@ -32,18 +32,17 @@
   --borderRadius: 1rem;
 }
 
-
 .link {
   display: flex;
   color: #fff;
   border-bottom: 1px solid #eee;
+  text-decoration: none;
 }
 
 .navList .link:hover {
   color: var(--primaryColorLight);
-  border-bottom: 1px solid var(--primaryColorDark);
-  color: rgb(206, 206, 209);
-  opacity: 0.5 !important;
+  border-bottom: 1px solid ; 
+  opacity: 0.8;
 }
 
 .contactBtn {
@@ -55,6 +54,7 @@
   outline: none;
   transition: 1s ease-in-out;
   white-space: nowrap;
+  color: white;
 }
 
 .iconHeart {
@@ -74,13 +74,13 @@
 }
 
 .contactBtn span {
-  color: white;
+  color: white !important;
   font-size: 18px;
   font-weight: 100;
 }
 
-.contactBtn a:visited {
-  color: #ffffff;
+.contactBtn a {
+  color: #ffffff !important;
 }
 
 .liBtn {
@@ -158,7 +158,7 @@
         font-size: var(--h3FontSize);
         justify-content: center;
         font-weight: 500;
-        padding: .3rem;
+        padding: 0.3rem;
         text-align: center;
         color: var(--whiteColor);
         cursor: pointer;
@@ -221,7 +221,7 @@
     li {
       display: flex;
       color: var(--blackColor);
-      margin-top: .7rem;
+      margin-top: 0.7rem;
     }
   }
   .botaoDOAR {
@@ -298,8 +298,6 @@
 }
 
 @media screen and (max-width: 530px) {
-  
-
   .navbar .logoDiv span {
     .linkLogo {
       font-size: 1.3rem;

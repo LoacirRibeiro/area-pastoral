@@ -28,13 +28,13 @@
   display: flex;
   color: #fff;
   border-bottom: 1px solid #eee;
+  text-decoration: none;
 }
 
 .navList .link:hover {
   color: var(--primaryColorLight);
-  border-bottom: 1px solid var(--primaryColorDark);
-  color: rgb(206, 206, 209);
-  opacity: 0.5 !important;
+  border-bottom: 1px solid;
+  opacity: 0.8;
 }
 
 .contactBtn {
@@ -46,6 +46,7 @@
   outline: none;
   transition: 1s ease-in-out;
   white-space: nowrap;
+  color: white;
 }
 
 .iconHeart {
@@ -65,13 +66,13 @@
 }
 
 .contactBtn span {
-  color: white;
+  color: white !important;
   font-size: 18px;
   font-weight: 100;
 }
 
-.contactBtn a:visited {
-  color: #ffffff;
+.contactBtn a {
+  color: #ffffff !important;
 }
 
 .liBtn {

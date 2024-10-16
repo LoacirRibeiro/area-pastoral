@@ -85,13 +85,14 @@ ul {
 }
 
 .editButton, .deleteButton {
-    background: none;
+    background: #e76f51;
     border: none;
-    color: #e76f51;
+    color: white;
     cursor: pointer;
     margin-left: 10px;
 }
-
 .editButton:hover, .deleteButton:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
 }
+
