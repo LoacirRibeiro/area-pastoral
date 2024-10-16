@@ -44,22 +44,29 @@ function Contatos() {
           </form>
         </div>
 
-        <div className="contactInfo" data-aos="fade-up">           
+        <div className="contactInfo" data-aos="fade-up">
           <div className="title">
-           <h2>Informações de Contatos</h2>
+            <h2>Informações de Contatos</h2>
           </div>
           <div className="divContato">
-          <div className="contato">
-            <div>
-              <MdLocationPin className="icons" />
+            <div className="contato">
+              <div>
+                <a
+                  className="maps-link"
+                  href="https://www.google.com/maps/dir/?api=1&destination=Av.+An%C3%A1polis%2C+1090+-+Jardim+Aeroporto+(Taquaralto)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdLocationPin className="icons" />
+                </a>
+              </div>
+              <div className="nomeContato">Endereço:</div>
+              <div>
+                <span>Quadra 4, rua SH 3, Lote 26 - Jardim Santa Helena</span>
+              </div>
             </div>
-            <div className="nomeContato">Endereço:</div>
-            <div>
-              <span>Quadra 4, rua SH 3, Lote 26 - Jardim Santa Helena</span>
-            </div>
-          </div>
 
-          {/* <div className="contato">
+            {/* <div className="contato">
             <div>
               <a href="mailto:areamissionariasaojose@gmail.com"
               target="_blank"
@@ -74,37 +81,37 @@ function Contatos() {
             </div>
           </div> */}
 
-          <div className="contato">
-            <div>
-              <a
-                href="https://wa.me/556391399447"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MdOutlineWhatsapp className="icons" />
-              </a>
+            <div className="contato">
+              <div>
+                <a
+                  href="https://wa.me/556391399447"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MdOutlineWhatsapp className="icons" />
+                </a>
+              </div>
+              <div className="nomeContato">WhatsApp:</div>
+              <div>
+                <span>(63) 9 9139-9447</span>
+              </div>
             </div>
-            <div className="nomeContato">WhatsApp:</div>
-            <div>
-              <span>(63) 9 9139-9447</span>
-            </div>
-          </div>
 
-          <div className="contato">
-            <div>
-              <a
-                href="https://www.instagram.com/sjanchieta_?igsh=aWs5NjhjeXo5dWx4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LuInstagram className="icons" />
-              </a>
+            <div className="contato">
+              <div>
+                <a
+                  href="https://www.instagram.com/sjanchieta_?igsh=aWs5NjhjeXo5dWx4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LuInstagram className="icons" />
+                </a>
+              </div>
+              <div className="nomeContato">Instagram:</div>
+              <div>
+                <span>www.instagram.com/ sjanchieta</span>
+              </div>
             </div>
-            <div className="nomeContato">Instagram:</div>
-            <div>
-              <span>www.instagram.com/ sjanchieta</span>
-            </div>
-          </div>
           </div>
         </div>
       </div>
