@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './cadastrar.css';
 
 function Cadastrar() {
@@ -43,7 +43,7 @@ function Cadastrar() {
             setErrorMessage('As senhas não coincidem.');
         } else {
             // Simulação de envio e redefinição de senha bem-sucedida
-            setMessage('Sua senha foi redefinida com sucesso.');
+            setMessage('Sua senha foi cadastrada  com sucesso.');
             setErrorMessage('');
 
             // Limpar os campos do formulário
@@ -53,6 +53,26 @@ function Cadastrar() {
             setConfirmPassword('');
         }
     };
+
+    // Efeito para ocultar mensagens de erro após 4 segundos
+  useEffect(() => {
+    if (errorMessage) {
+      const timer = setTimeout(() => {
+        setErrorMessage("");
+      }, 4000);
+      return () => clearTimeout(timer); // Limpa o timer se o componente for desmontado ou a mensagem mudar
+    }
+  }, [errorMessage]);
+
+  // Efeito para ocultar mensagens de erro após 4 segundos
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => {
+        setMessage("");
+      }, 4000);
+      return () => clearTimeout(timer); // Limpa o timer se o componente for desmontado ou a mensagem mudar
+    }
+  }, [message]);
 
     return (
         <div className="Cadastrar container">

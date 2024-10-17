@@ -21,11 +21,19 @@
   color: #ff6600;
 }
 .Cadastrar .cadastrarContainer .successMessage {
+  background: rgb(219, 250, 219);
+  padding: 25px;
+  border-radius: 6px;
+  border: solid 1px;
   color: green;
   margin-bottom: 1rem;
 }
 .Cadastrar .cadastrarContainer .error {
-  color: red;
+  background: #f7b487;
+  padding: 25px;
+  border-radius: 6px;
+  border: solid 1px;
+  color: rgb(253, 8, 8);
   margin-bottom: 1rem;
 }
 .Cadastrar .cadastrarContainer .inputGroup {

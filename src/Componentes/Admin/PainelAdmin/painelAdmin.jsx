@@ -4,7 +4,7 @@ import "./painelAdmin.css";
 
 const items = [
   { id: 1, title: "Cadastro de Usuários", route: "/adminCadastroUsuario" },
-  { id: 2, title: "Cadastro de Admin", route: "/adminCadastroUsuario" },
+  { id: 2, title: "Cadastrar Admin", route: "/adminCadastroUsuario" },
   { id: 3, title: "Serviços", route: "/adminServicos" },
   { id: 4, title: "Comunicados", route: "/adminComunicado" },
   { id: 5, title: "Admin Dizimistas", route: "/adminDizimista" },
