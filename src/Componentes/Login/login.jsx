@@ -32,6 +32,9 @@ function Login() {
     );
   };
 
+   
+    
+
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -40,7 +43,7 @@ function Login() {
       setErrorMessage("O nome de usuário deve ter pelo menos 3 caracteres.");
     } else if (!validatePassword(password)) {
       setErrorMessage(
-        "Usuario ou senha incorreta"
+        "Nome de usuário ou senha incorretos."
       );
     } else {
       // Teste de autenticação
@@ -52,6 +55,10 @@ function Login() {
         setErrorMessage("Nome de usuário ou senha incorretos.");
         setSuccessMessage("");
       }
+
+       // Limpar os campos do formulário
+    setUsername("");
+    setPassword("");
     }
   };
 
